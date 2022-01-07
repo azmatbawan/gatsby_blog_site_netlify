@@ -50,32 +50,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.slug} rel="prev">
-                ← {previous.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.slug} rel="next">
-                {next.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      
     </Layout>
   )
 }
@@ -84,10 +59,8 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query MyQuery(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
+    $id: String!)
+     {
     site {
       siteMetadata {
         title
@@ -104,16 +77,6 @@ export const pageQuery = graphql`
     image {
       gatsbyImageData(height: 300, width: 200)
     }
-    }
-    previous: contentfulPosts(id: { eq: $previousPostId }) {
-      id
-      title
-      slug
-    }
-    next: contentfulPosts(id: { eq: $nextPostId }) {
-      id
-      title
-      slug
     }
   }
 `
