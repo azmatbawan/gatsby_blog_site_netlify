@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-index-js",
-    "path": "/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby_contentfull_netlify  Blog"}},"allContentfulPosts":{"nodes":[{"title":"post-1","slug":"post-1","id":"211ac49f-3e0a-5837-9f21-6f1edbc1541f","createdAt":"22/12/2021"},{"title":"post-2","slug":"post-2","id":"3a5315ef-cb77-5d1d-861e-54c89207192c","createdAt":"22/12/2021"},{"title":"post-3","slug":"post-3","id":"49fbaf4a-2cd8-5e81-8fbc-6cedb283df1f","createdAt":"22/12/2021"}]}},"pageContext":{}},
-    "staticQueryHashes": []}
