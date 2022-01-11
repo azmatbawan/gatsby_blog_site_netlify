@@ -1,37 +1,30 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import {graphql } from "gatsby"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-
-
-import Bio from "../components/bio"
+import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const RICHTEXT_OPTIONS = {
+const option = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => {
-    return
-    <p>{children}</p>
-  },
-  [MARKS.BOLD]: (node, children) => {
-    return
-    <p>{children}</p>
-  },
-}}
+    [BLOCKS.PARAGRAPH]: (node, children) => <p className="paragraph">{children}</p>},
+//  [MARKS.BOLD]: (node, children) => {
+//    <p>{children}</p>
+//  },
+//}
+}
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.contentfulPosts
   const siteTitle ="Post"
   const { previous, next } = data
   const json=JSON.parse(post.description.raw)
-
+  const img = getImage(post.image)
+  
+  console.log('json    ',json)
+  
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.title}
-        description={post.description.raw || post.title}
-      />
       <article
         className="blog-post"
         itemScope
@@ -43,11 +36,17 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
       
         <section>
-        
-          {documentToReactComponents(json,RICHTEXT_OPTIONS)}
+      
+         {documentToReactComponents(json,option)} 
+         
+
+         <h5>{post.image.description}</h5>
+         <br/>
+         <GatsbyImage image={img} alt={post.title} />
+
         </section>
         <footer>
-          <Bio />
+          
         </footer>
       </article>
       
@@ -66,17 +65,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    contentfulPosts(id: { eq: $id }) {
-       id
-    title
-    slug
-    createdAt(formatString: "DD/MM/YYYY")
-    description {
-      raw
-    }
-    image {
-      gatsbyImageData(height: 300, width: 200)
-    }
+    contentfulPosts(id: {eq: $id}) {
+      title
+      createdAt(formatString: "DD/MM/YYYY")
+      description {
+        raw
+      }
+      image {
+        gatsbyImageData(layout: FULL_WIDTH, height: 50, width: 50)
+        description
+      }
     }
   }
 `

@@ -258,6 +258,9 @@ a:focus {
   font-size: var(--fontSize-7);
   margin: 0;
 }
+.paragraph{
+color: red;
+}
 
 .post-list-item {
   margin-bottom: var(--spacing-8);

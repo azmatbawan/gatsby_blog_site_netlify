@@ -1,21 +1,19 @@
-exports.id = "component---src-templates-blog-post-js";
-exports.ids = ["component---src-templates-blog-post-js"];
+exports.id = 989;
+exports.ids = [989];
 exports.modules = {
 
-/***/ "./node_modules/@contentful/rich-text-react-renderer/dist/rich-text-react-renderer.es5.js":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-react-renderer/dist/rich-text-react-renderer.es5.js ***!
-  \************************************************************************************************/
+/***/ 4129:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+var __webpack_unused_export__;
 
 
-Object.defineProperty(exports, "__esModule", ({ value: true }));
+__webpack_unused_export__ = ({ value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = __webpack_require__(/*! react */ "react");
+var React = __webpack_require__(5952);
 var React__default = _interopDefault(React);
 
 /*! *****************************************************************************
@@ -8079,16 +8077,13 @@ function documentToReactComponents(richTextDocument, options) {
     });
 }
 
-exports.documentToReactComponents = documentToReactComponents;
+exports.h = documentToReactComponents;
 //# sourceMappingURL=rich-text-react-renderer.es5.js.map
 
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/blocks.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/blocks.js ***!
-  \*****************************************************************/
+/***/ 549:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8124,16 +8119,13 @@ var BLOCKS;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/emptyDocument.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/emptyDocument.js ***!
-  \************************************************************************/
+/***/ 1928:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-var blocks_1 = __webpack_require__(/*! ./blocks */ "./node_modules/@contentful/rich-text-types/dist/blocks.js");
+var blocks_1 = __webpack_require__(549);
 /**
  * A rich text document considered to be empty.
  * Any other document structure than this is not considered empty.
@@ -8161,18 +8153,15 @@ exports["default"] = EMPTY_DOCUMENT;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/helpers.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/helpers.js ***!
-  \******************************************************************/
+/***/ 6061:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.isText = exports.isBlock = exports.isInline = void 0;
-var blocks_1 = __webpack_require__(/*! ./blocks */ "./node_modules/@contentful/rich-text-types/dist/blocks.js");
-var inlines_1 = __webpack_require__(/*! ./inlines */ "./node_modules/@contentful/rich-text-types/dist/inlines.js");
+var blocks_1 = __webpack_require__(549);
+var inlines_1 = __webpack_require__(7845);
 /**
  * Tiny replacement for Object.values(object).includes(key) to
  * avoid including CoreJS polyfills
@@ -8211,10 +8200,7 @@ exports.isText = isText;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/index.js ***!
-  \****************************************************************/
+/***/ 6437:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -8246,29 +8232,26 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateRichTextDocument = exports.helpers = exports.EMPTY_DOCUMENT = exports.MARKS = exports.INLINES = exports.BLOCKS = void 0;
-var blocks_1 = __webpack_require__(/*! ./blocks */ "./node_modules/@contentful/rich-text-types/dist/blocks.js");
+var blocks_1 = __webpack_require__(549);
 Object.defineProperty(exports, "BLOCKS", ({ enumerable: true, get: function () { return blocks_1.BLOCKS; } }));
-var inlines_1 = __webpack_require__(/*! ./inlines */ "./node_modules/@contentful/rich-text-types/dist/inlines.js");
+var inlines_1 = __webpack_require__(7845);
 Object.defineProperty(exports, "INLINES", ({ enumerable: true, get: function () { return inlines_1.INLINES; } }));
-var marks_1 = __webpack_require__(/*! ./marks */ "./node_modules/@contentful/rich-text-types/dist/marks.js");
+var marks_1 = __webpack_require__(1376);
 Object.defineProperty(exports, "MARKS", ({ enumerable: true, get: function () { return __importDefault(marks_1).default; } }));
-__exportStar(__webpack_require__(/*! ./schemaConstraints */ "./node_modules/@contentful/rich-text-types/dist/schemaConstraints.js"), exports);
-__exportStar(__webpack_require__(/*! ./types */ "./node_modules/@contentful/rich-text-types/dist/types.js"), exports);
-__exportStar(__webpack_require__(/*! ./nodeTypes */ "./node_modules/@contentful/rich-text-types/dist/nodeTypes.js"), exports);
-var emptyDocument_1 = __webpack_require__(/*! ./emptyDocument */ "./node_modules/@contentful/rich-text-types/dist/emptyDocument.js");
+__exportStar(__webpack_require__(7951), exports);
+__exportStar(__webpack_require__(167), exports);
+__exportStar(__webpack_require__(1911), exports);
+var emptyDocument_1 = __webpack_require__(1928);
 Object.defineProperty(exports, "EMPTY_DOCUMENT", ({ enumerable: true, get: function () { return __importDefault(emptyDocument_1).default; } }));
-var helpers = __importStar(__webpack_require__(/*! ./helpers */ "./node_modules/@contentful/rich-text-types/dist/helpers.js"));
+var helpers = __importStar(__webpack_require__(6061));
 exports.helpers = helpers;
-var validation_1 = __webpack_require__(/*! ./validation */ "./node_modules/@contentful/rich-text-types/dist/validation.js");
+var validation_1 = __webpack_require__(9146);
 Object.defineProperty(exports, "validateRichTextDocument", ({ enumerable: true, get: function () { return validation_1.validateRichTextDocument; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/inlines.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/inlines.js ***!
-  \******************************************************************/
+/***/ 7845:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8289,10 +8272,7 @@ var INLINES;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/marks.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/marks.js ***!
-  \****************************************************************/
+/***/ 1376:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8313,10 +8293,7 @@ exports["default"] = MARKS;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/nodeTypes.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/nodeTypes.js ***!
-  \********************************************************************/
+/***/ 1911:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8326,10 +8303,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemaConstraints.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemaConstraints.js ***!
-  \****************************************************************************/
+/***/ 7951:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -8337,8 +8311,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 var _a;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.V1_NODE_TYPES = exports.TEXT_CONTAINERS = exports.CONTAINERS = exports.VOID_BLOCKS = exports.TABLE_BLOCKS = exports.LIST_ITEM_BLOCKS = exports.TOP_LEVEL_BLOCKS = void 0;
-var blocks_1 = __webpack_require__(/*! ./blocks */ "./node_modules/@contentful/rich-text-types/dist/blocks.js");
-var inlines_1 = __webpack_require__(/*! ./inlines */ "./node_modules/@contentful/rich-text-types/dist/inlines.js");
+var blocks_1 = __webpack_require__(549);
+var inlines_1 = __webpack_require__(7845);
 /**
  * Array of all top level block types.
  * Only these block types can be the direct children of the document.
@@ -8443,37 +8417,34 @@ exports.V1_NODE_TYPES = [
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated sync recursive ^\\.\\/.*\\.json$":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/ sync ^\.\/.*\.json$ ***!
-  \**********************************************************************************************/
+/***/ 7507:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./asset-hyperlink.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/asset-hyperlink.json",
-	"./blockquote.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/blockquote.json",
-	"./document.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/document.json",
-	"./embedded-asset-block.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-asset-block.json",
-	"./embedded-entry-block.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-block.json",
-	"./embedded-entry-inline.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-inline.json",
-	"./entry-hyperlink.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/entry-hyperlink.json",
-	"./heading-1.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-1.json",
-	"./heading-2.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-2.json",
-	"./heading-3.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-3.json",
-	"./heading-4.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-4.json",
-	"./heading-5.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-5.json",
-	"./heading-6.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-6.json",
-	"./hr.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/hr.json",
-	"./hyperlink.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/hyperlink.json",
-	"./list-item.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/list-item.json",
-	"./ordered-list.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/ordered-list.json",
-	"./paragraph.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/paragraph.json",
-	"./table-cell.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-cell.json",
-	"./table-header-cell.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-header-cell.json",
-	"./table-row.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-row.json",
-	"./table.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table.json",
-	"./text.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/text.json",
-	"./unordered-list.json": "./node_modules/@contentful/rich-text-types/dist/schemas/generated/unordered-list.json"
+	"./asset-hyperlink.json": 5994,
+	"./blockquote.json": 2559,
+	"./document.json": 1734,
+	"./embedded-asset-block.json": 1220,
+	"./embedded-entry-block.json": 2258,
+	"./embedded-entry-inline.json": 2204,
+	"./entry-hyperlink.json": 6502,
+	"./heading-1.json": 2813,
+	"./heading-2.json": 5080,
+	"./heading-3.json": 6423,
+	"./heading-4.json": 4942,
+	"./heading-5.json": 5579,
+	"./heading-6.json": 705,
+	"./hr.json": 7121,
+	"./hyperlink.json": 3165,
+	"./list-item.json": 8094,
+	"./ordered-list.json": 8122,
+	"./paragraph.json": 8986,
+	"./table-cell.json": 9924,
+	"./table-header-cell.json": 1787,
+	"./table-row.json": 5531,
+	"./table.json": 9269,
+	"./text.json": 3022,
+	"./unordered-list.json": 8500
 };
 
 
@@ -8494,14 +8465,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/@contentful/rich-text-types/dist/schemas/generated sync recursive ^\\.\\/.*\\.json$";
+webpackContext.id = 7507;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/index.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/index.js ***!
-  \************************************************************************/
+/***/ 1024:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -8510,7 +8478,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getSchemaWithNodeType = void 0;
 function getSchemaWithNodeType(nodeType) {
     try {
-        return __webpack_require__("./node_modules/@contentful/rich-text-types/dist/schemas/generated sync recursive ^\\.\\/.*\\.json$")("./" + nodeType + ".json");
+        return __webpack_require__(7507)("./" + nodeType + ".json");
     }
     catch (error) {
         throw new Error("Schema for nodeType \"" + nodeType + "\" was not found.");
@@ -8521,10 +8489,7 @@ exports.getSchemaWithNodeType = getSchemaWithNodeType;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/types.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/types.js ***!
-  \****************************************************************/
+/***/ 167:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8534,10 +8499,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/validation.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/validation.js ***!
-  \*********************************************************************/
+/***/ 9146:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -8556,10 +8518,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateRichTextDocument = void 0;
-var ajv_1 = __importDefault(__webpack_require__(/*! ajv */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/ajv.js"));
-var blocks_1 = __webpack_require__(/*! ./blocks */ "./node_modules/@contentful/rich-text-types/dist/blocks.js");
-var helpers_1 = __webpack_require__(/*! ./helpers */ "./node_modules/@contentful/rich-text-types/dist/helpers.js");
-var schemas_1 = __webpack_require__(/*! ./schemas */ "./node_modules/@contentful/rich-text-types/dist/schemas/index.js");
+var ajv_1 = __importDefault(__webpack_require__(1885));
+var blocks_1 = __webpack_require__(549);
+var helpers_1 = __webpack_require__(6061);
+var schemas_1 = __webpack_require__(1024);
 var ajv = new ajv_1.default({ allErrors: true, verbose: true });
 /**
  * Validates a rich text document against our JSON schemas using AJV.
@@ -8669,20 +8631,17 @@ function isLeafNode(node) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/ajv.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/ajv.js ***!
-  \*******************************************************************************/
+/***/ 1885:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.CodeGen = exports.Name = exports.nil = exports.stringify = exports.str = exports._ = exports.KeywordCxt = void 0;
-const core_1 = __webpack_require__(/*! ./core */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/core.js");
-const draft7_1 = __webpack_require__(/*! ./vocabularies/draft7 */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/draft7.js");
-const discriminator_1 = __webpack_require__(/*! ./vocabularies/discriminator */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/index.js");
-const draft7MetaSchema = __webpack_require__(/*! ./refs/json-schema-draft-07.json */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/json-schema-draft-07.json");
+const core_1 = __webpack_require__(5004);
+const draft7_1 = __webpack_require__(9292);
+const discriminator_1 = __webpack_require__(1489);
+const draft7MetaSchema = __webpack_require__(1668);
 const META_SUPPORT_DATA = ["/properties"];
 const META_SCHEMA_ID = "http://json-schema.org/draft-07/schema";
 class Ajv extends core_1.default {
@@ -8710,9 +8669,9 @@ class Ajv extends core_1.default {
 module.exports = exports = Ajv;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports["default"] = Ajv;
-var validate_1 = __webpack_require__(/*! ./compile/validate */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js");
+var validate_1 = __webpack_require__(8720);
 Object.defineProperty(exports, "KeywordCxt", ({ enumerable: true, get: function () { return validate_1.KeywordCxt; } }));
-var codegen_1 = __webpack_require__(/*! ./compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+var codegen_1 = __webpack_require__(7494);
 Object.defineProperty(exports, "_", ({ enumerable: true, get: function () { return codegen_1._; } }));
 Object.defineProperty(exports, "str", ({ enumerable: true, get: function () { return codegen_1.str; } }));
 Object.defineProperty(exports, "stringify", ({ enumerable: true, get: function () { return codegen_1.stringify; } }));
@@ -8723,10 +8682,7 @@ Object.defineProperty(exports, "CodeGen", ({ enumerable: true, get: function () 
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js ***!
-  \************************************************************************************************/
+/***/ 9726:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -8880,19 +8836,16 @@ exports.regexpCode = regexpCode;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js ***!
-  \*************************************************************************************************/
+/***/ 7494:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.or = exports.and = exports.not = exports.CodeGen = exports.operators = exports.varKinds = exports.ValueScopeName = exports.ValueScope = exports.Scope = exports.Name = exports.regexpCode = exports.stringify = exports.getProperty = exports.nil = exports.strConcat = exports.str = exports._ = void 0;
-const code_1 = __webpack_require__(/*! ./code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js");
-const scope_1 = __webpack_require__(/*! ./scope */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/scope.js");
-var code_2 = __webpack_require__(/*! ./code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js");
+const code_1 = __webpack_require__(9726);
+const scope_1 = __webpack_require__(2928);
+var code_2 = __webpack_require__(9726);
 Object.defineProperty(exports, "_", ({ enumerable: true, get: function () { return code_2._; } }));
 Object.defineProperty(exports, "str", ({ enumerable: true, get: function () { return code_2.str; } }));
 Object.defineProperty(exports, "strConcat", ({ enumerable: true, get: function () { return code_2.strConcat; } }));
@@ -8901,7 +8854,7 @@ Object.defineProperty(exports, "getProperty", ({ enumerable: true, get: function
 Object.defineProperty(exports, "stringify", ({ enumerable: true, get: function () { return code_2.stringify; } }));
 Object.defineProperty(exports, "regexpCode", ({ enumerable: true, get: function () { return code_2.regexpCode; } }));
 Object.defineProperty(exports, "Name", ({ enumerable: true, get: function () { return code_2.Name; } }));
-var scope_2 = __webpack_require__(/*! ./scope */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/scope.js");
+var scope_2 = __webpack_require__(2928);
 Object.defineProperty(exports, "Scope", ({ enumerable: true, get: function () { return scope_2.Scope; } }));
 Object.defineProperty(exports, "ValueScope", ({ enumerable: true, get: function () { return scope_2.ValueScope; } }));
 Object.defineProperty(exports, "ValueScopeName", ({ enumerable: true, get: function () { return scope_2.ValueScopeName; } }));
@@ -9587,17 +9540,14 @@ function par(x) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/scope.js":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/scope.js ***!
-  \*************************************************************************************************/
+/***/ 2928:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ValueScope = exports.ValueScopeName = exports.Scope = exports.varKinds = exports.UsedValueState = void 0;
-const code_1 = __webpack_require__(/*! ./code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js");
+const code_1 = __webpack_require__(9726);
 class ValueError extends Error {
     constructor(name) {
         super(`CodeGen: "code" for ${name} not defined`);
@@ -9740,19 +9690,16 @@ exports.ValueScope = ValueScope;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js ***!
-  \******************************************************************************************/
+/***/ 7822:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.extendErrors = exports.resetErrorsCount = exports.reportExtraError = exports.reportError = exports.keyword$DataError = exports.keywordError = void 0;
-const codegen_1 = __webpack_require__(/*! ./codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ./util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const names_1 = __webpack_require__(/*! ./names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const names_1 = __webpack_require__(3274);
 exports.keywordError = {
     message: ({ keyword }) => (0, codegen_1.str) `must pass "${keyword}" keyword validation`,
 };
@@ -9873,23 +9820,20 @@ function extraErrorProps(cxt, { params, message }, keyValues) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/index.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/index.js ***!
-  \*****************************************************************************************/
+/***/ 8101:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.resolveSchema = exports.getCompilingSchema = exports.resolveRef = exports.compileSchema = exports.SchemaEnv = void 0;
-const codegen_1 = __webpack_require__(/*! ./codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const validation_error_1 = __webpack_require__(/*! ../runtime/validation_error */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/validation_error.js");
-const names_1 = __webpack_require__(/*! ./names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const resolve_1 = __webpack_require__(/*! ./resolve */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js");
-const util_1 = __webpack_require__(/*! ./util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const validate_1 = __webpack_require__(/*! ./validate */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js");
-const URI = __webpack_require__(/*! uri-js */ "./node_modules/uri-js/dist/es5/uri.all.js");
+const codegen_1 = __webpack_require__(7494);
+const validation_error_1 = __webpack_require__(3701);
+const names_1 = __webpack_require__(3274);
+const resolve_1 = __webpack_require__(631);
+const util_1 = __webpack_require__(9291);
+const validate_1 = __webpack_require__(8720);
+const URI = __webpack_require__(540);
 class SchemaEnv {
     constructor(env) {
         var _a;
@@ -10126,16 +10070,13 @@ function getJsonPointer(parsedRef, { baseId, schema, root }) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js ***!
-  \*****************************************************************************************/
+/***/ 3274:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ./codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const names = {
     // validation function arguments
     data: new codegen_1.Name("data"),
@@ -10164,16 +10105,13 @@ exports["default"] = names;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/ref_error.js":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/ref_error.js ***!
-  \*********************************************************************************************/
+/***/ 2434:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const resolve_1 = __webpack_require__(/*! ./resolve */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js");
+const resolve_1 = __webpack_require__(631);
 class MissingRefError extends Error {
     constructor(baseId, ref, msg) {
         super(msg || `can't resolve reference ${ref} from id ${baseId}`);
@@ -10186,20 +10124,17 @@ exports["default"] = MissingRefError;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js ***!
-  \*******************************************************************************************/
+/***/ 631:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getSchemaRefs = exports.resolveUrl = exports.normalizeId = exports._getFullPath = exports.getFullPath = exports.inlineRef = void 0;
-const util_1 = __webpack_require__(/*! ./util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const equal = __webpack_require__(/*! fast-deep-equal */ "./node_modules/fast-deep-equal/index.js");
-const traverse = __webpack_require__(/*! json-schema-traverse */ "./node_modules/@contentful/rich-text-types/node_modules/json-schema-traverse/index.js");
-const URI = __webpack_require__(/*! uri-js */ "./node_modules/uri-js/dist/es5/uri.all.js");
+const util_1 = __webpack_require__(9291);
+const equal = __webpack_require__(4063);
+const traverse = __webpack_require__(5473);
+const URI = __webpack_require__(540);
 // TODO refactor to use keyword definitions
 const SIMPLE_INLINED = new Set([
     "type",
@@ -10349,10 +10284,7 @@ exports.getSchemaRefs = getSchemaRefs;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/rules.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/rules.js ***!
-  \*****************************************************************************************/
+/***/ 6177:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10385,18 +10317,15 @@ exports.getRules = getRules;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js ***!
-  \****************************************************************************************/
+/***/ 9291:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.checkStrictMode = exports.getErrorPath = exports.Type = exports.useFunc = exports.setEvaluated = exports.evaluatedPropsToName = exports.mergeEvaluated = exports.eachItem = exports.unescapeJsonPointer = exports.escapeJsonPointer = exports.escapeFragment = exports.unescapeFragment = exports.schemaRefOrVal = exports.schemaHasRulesButRef = exports.schemaHasRules = exports.checkUnknownRules = exports.alwaysValidSchema = exports.toHash = void 0;
-const codegen_1 = __webpack_require__(/*! ./codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const code_1 = __webpack_require__(/*! ./codegen/code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/code.js");
+const codegen_1 = __webpack_require__(7494);
+const code_1 = __webpack_require__(9726);
 // TODO refactor to use Set
 function toHash(arr) {
     const hash = {};
@@ -10573,10 +10502,7 @@ exports.checkStrictMode = checkStrictMode;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/applicability.js":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/applicability.js ***!
-  \**********************************************************************************************************/
+/***/ 2785:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -10602,19 +10528,16 @@ exports.shouldUseRule = shouldUseRule;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/boolSchema.js":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/boolSchema.js ***!
-  \*******************************************************************************************************/
+/***/ 3312:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.boolOrEmptySchema = exports.topBoolOrEmptySchema = void 0;
-const errors_1 = __webpack_require__(/*! ../errors */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js");
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const names_1 = __webpack_require__(/*! ../names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
+const errors_1 = __webpack_require__(7822);
+const codegen_1 = __webpack_require__(7494);
+const names_1 = __webpack_require__(3274);
 const boolError = {
     message: "boolean schema is false",
 };
@@ -10662,21 +10585,18 @@ function falseSchemaError(it, overrideAllErrors) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js ***!
-  \*****************************************************************************************************/
+/***/ 5432:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.reportTypeError = exports.checkDataTypes = exports.checkDataType = exports.coerceAndCheckDataType = exports.getJSONTypes = exports.getSchemaTypes = exports.DataType = void 0;
-const rules_1 = __webpack_require__(/*! ../rules */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/rules.js");
-const applicability_1 = __webpack_require__(/*! ./applicability */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/applicability.js");
-const errors_1 = __webpack_require__(/*! ../errors */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js");
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const rules_1 = __webpack_require__(6177);
+const applicability_1 = __webpack_require__(2785);
+const errors_1 = __webpack_require__(7822);
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 var DataType;
 (function (DataType) {
     DataType[DataType["Correct"] = 0] = "Correct";
@@ -10874,18 +10794,15 @@ function getTypeErrorContext(it) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/defaults.js":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/defaults.js ***!
-  \*****************************************************************************************************/
+/***/ 1571:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.assignDefaults = void 0;
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 function assignDefaults(it, ty) {
     const { properties, items } = it.schema;
     if (ty === "object" && properties) {
@@ -10919,28 +10836,25 @@ function assignDefault(it, prop, defaultValue) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js ***!
-  \**************************************************************************************************/
+/***/ 8720:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getData = exports.KeywordCxt = exports.validateFunctionCode = void 0;
-const boolSchema_1 = __webpack_require__(/*! ./boolSchema */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/boolSchema.js");
-const dataType_1 = __webpack_require__(/*! ./dataType */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js");
-const applicability_1 = __webpack_require__(/*! ./applicability */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/applicability.js");
-const dataType_2 = __webpack_require__(/*! ./dataType */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js");
-const defaults_1 = __webpack_require__(/*! ./defaults */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/defaults.js");
-const keyword_1 = __webpack_require__(/*! ./keyword */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/keyword.js");
-const subschema_1 = __webpack_require__(/*! ./subschema */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/subschema.js");
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const names_1 = __webpack_require__(/*! ../names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const resolve_1 = __webpack_require__(/*! ../resolve */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js");
-const util_1 = __webpack_require__(/*! ../util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const errors_1 = __webpack_require__(/*! ../errors */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js");
+const boolSchema_1 = __webpack_require__(3312);
+const dataType_1 = __webpack_require__(5432);
+const applicability_1 = __webpack_require__(2785);
+const dataType_2 = __webpack_require__(5432);
+const defaults_1 = __webpack_require__(1571);
+const keyword_1 = __webpack_require__(2421);
+const subschema_1 = __webpack_require__(2388);
+const codegen_1 = __webpack_require__(7494);
+const names_1 = __webpack_require__(3274);
+const resolve_1 = __webpack_require__(631);
+const util_1 = __webpack_require__(9291);
+const errors_1 = __webpack_require__(7822);
 // schema compilation - generates validation function, subschemaCode (below) is used for subschemas
 function validateFunctionCode(it) {
     if (isSchemaObj(it)) {
@@ -11439,20 +11353,17 @@ exports.getData = getData;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/keyword.js":
-/*!****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/keyword.js ***!
-  \****************************************************************************************************/
+/***/ 2421:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateKeywordUsage = exports.validSchemaType = exports.funcKeywordCode = exports.macroKeywordCode = void 0;
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const names_1 = __webpack_require__(/*! ../names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const code_1 = __webpack_require__(/*! ../../vocabularies/code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const errors_1 = __webpack_require__(/*! ../errors */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/errors.js");
+const codegen_1 = __webpack_require__(7494);
+const names_1 = __webpack_require__(3274);
+const code_1 = __webpack_require__(4155);
+const errors_1 = __webpack_require__(7822);
 function macroKeywordCode(cxt, def) {
     const { gen, keyword, schema, parentSchema, it } = cxt;
     const macroSchema = def.macro.call(it.self, schema, parentSchema, it);
@@ -11573,18 +11484,15 @@ exports.validateKeywordUsage = validateKeywordUsage;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/subschema.js":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/subschema.js ***!
-  \******************************************************************************************************/
+/***/ 2388:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.extendSubschemaMode = exports.extendSubschemaData = exports.getSubschema = void 0;
-const codegen_1 = __webpack_require__(/*! ../codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 function getSubschema(it, { keyword, schemaProp, schema, schemaPath, errSchemaPath, topSchemaRef }) {
     if (keyword !== undefined && schema !== undefined) {
         throw new Error('both "keyword" and "schema" passed, only one allowed');
@@ -11664,34 +11572,31 @@ exports.extendSubschemaMode = extendSubschemaMode;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/core.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/core.js ***!
-  \********************************************************************************/
+/***/ 5004:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.CodeGen = exports.Name = exports.nil = exports.stringify = exports.str = exports._ = exports.KeywordCxt = void 0;
-var validate_1 = __webpack_require__(/*! ./compile/validate */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js");
+var validate_1 = __webpack_require__(8720);
 Object.defineProperty(exports, "KeywordCxt", ({ enumerable: true, get: function () { return validate_1.KeywordCxt; } }));
-var codegen_1 = __webpack_require__(/*! ./compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+var codegen_1 = __webpack_require__(7494);
 Object.defineProperty(exports, "_", ({ enumerable: true, get: function () { return codegen_1._; } }));
 Object.defineProperty(exports, "str", ({ enumerable: true, get: function () { return codegen_1.str; } }));
 Object.defineProperty(exports, "stringify", ({ enumerable: true, get: function () { return codegen_1.stringify; } }));
 Object.defineProperty(exports, "nil", ({ enumerable: true, get: function () { return codegen_1.nil; } }));
 Object.defineProperty(exports, "Name", ({ enumerable: true, get: function () { return codegen_1.Name; } }));
 Object.defineProperty(exports, "CodeGen", ({ enumerable: true, get: function () { return codegen_1.CodeGen; } }));
-const validation_error_1 = __webpack_require__(/*! ./runtime/validation_error */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/validation_error.js");
-const ref_error_1 = __webpack_require__(/*! ./compile/ref_error */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/ref_error.js");
-const rules_1 = __webpack_require__(/*! ./compile/rules */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/rules.js");
-const compile_1 = __webpack_require__(/*! ./compile */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/index.js");
-const codegen_2 = __webpack_require__(/*! ./compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const resolve_1 = __webpack_require__(/*! ./compile/resolve */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/resolve.js");
-const dataType_1 = __webpack_require__(/*! ./compile/validate/dataType */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js");
-const util_1 = __webpack_require__(/*! ./compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const $dataRefSchema = __webpack_require__(/*! ./refs/data.json */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/data.json");
+const validation_error_1 = __webpack_require__(3701);
+const ref_error_1 = __webpack_require__(2434);
+const rules_1 = __webpack_require__(6177);
+const compile_1 = __webpack_require__(8101);
+const codegen_2 = __webpack_require__(7494);
+const resolve_1 = __webpack_require__(631);
+const dataType_1 = __webpack_require__(5432);
+const util_1 = __webpack_require__(9291);
+const $dataRefSchema = __webpack_require__(1072);
 const defaultRegExp = (str, flags) => new RegExp(str, flags);
 defaultRegExp.code = "new RegExp";
 const META_IGNORE_OPTIONS = ["removeAdditional", "useDefaults", "coerceTypes"];
@@ -12288,27 +12193,21 @@ function schemaOrData(schema) {
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/equal.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/equal.js ***!
-  \*****************************************************************************************/
+/***/ 2176:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 // https://github.com/ajv-validator/ajv/issues/889
-const equal = __webpack_require__(/*! fast-deep-equal */ "./node_modules/fast-deep-equal/index.js");
+const equal = __webpack_require__(4063);
 equal.code = 'require("ajv/dist/runtime/equal").default';
 exports["default"] = equal;
 //# sourceMappingURL=equal.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/ucs2length.js":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/ucs2length.js ***!
-  \**********************************************************************************************/
+/***/ 103:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -12339,10 +12238,7 @@ ucs2length.code = 'require("ajv/dist/runtime/ucs2length").default';
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/validation_error.js":
-/*!****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/validation_error.js ***!
-  \****************************************************************************************************/
+/***/ 3701:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -12360,18 +12256,15 @@ exports["default"] = ValidationError;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalItems.js":
-/*!*******************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalItems.js ***!
-  \*******************************************************************************************************************/
+/***/ 7206:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateAdditionalItems = void 0;
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: ({ params: { len } }) => (0, codegen_1.str) `must NOT have more than ${len} items`,
     params: ({ params: { len } }) => (0, codegen_1._) `{limit: ${len}}`,
@@ -12419,19 +12312,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.js":
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.js ***!
-  \************************************************************************************************************************/
+/***/ 5589:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const names_1 = __webpack_require__(/*! ../../compile/names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const code_1 = __webpack_require__(4155);
+const codegen_1 = __webpack_require__(7494);
+const names_1 = __webpack_require__(3274);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: "must NOT have additional properties",
     params: ({ params }) => (0, codegen_1._) `{additionalProperty: ${params.additionalProperty}}`,
@@ -12535,16 +12425,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/allOf.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/allOf.js ***!
-  \*********************************************************************************************************/
+/***/ 3787:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const util_1 = __webpack_require__(9291);
 const def = {
     keyword: "allOf",
     schemaType: "array",
@@ -12568,16 +12455,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/anyOf.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/anyOf.js ***!
-  \*********************************************************************************************************/
+/***/ 2157:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
+const code_1 = __webpack_require__(4155);
 const def = {
     keyword: "anyOf",
     schemaType: "array",
@@ -12590,17 +12474,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/contains.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/contains.js ***!
-  \************************************************************************************************************/
+/***/ 6207:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: ({ params: { min, max } }) => max === undefined
         ? (0, codegen_1.str) `must contain at least ${min} valid item(s)`
@@ -12695,19 +12576,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/dependencies.js":
-/*!****************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/dependencies.js ***!
-  \****************************************************************************************************************/
+/***/ 7002:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateSchemaDeps = exports.validatePropertyDeps = exports.error = void 0;
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const code_1 = __webpack_require__(4155);
 exports.error = {
     message: ({ params: { property, depsCount, deps } }) => {
         const property_ies = depsCount === 1 ? "property" : "properties";
@@ -12790,17 +12668,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/if.js":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/if.js ***!
-  \******************************************************************************************************/
+/***/ 7844:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: ({ params }) => (0, codegen_1.str) `must match "${params.ifClause}" schema`,
     params: ({ params }) => (0, codegen_1._) `{failingKeyword: ${params.ifClause}}`,
@@ -12866,31 +12741,28 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/index.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/index.js ***!
-  \*********************************************************************************************************/
+/***/ 7460:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const additionalItems_1 = __webpack_require__(/*! ./additionalItems */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalItems.js");
-const prefixItems_1 = __webpack_require__(/*! ./prefixItems */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/prefixItems.js");
-const items_1 = __webpack_require__(/*! ./items */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items.js");
-const items2020_1 = __webpack_require__(/*! ./items2020 */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items2020.js");
-const contains_1 = __webpack_require__(/*! ./contains */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/contains.js");
-const dependencies_1 = __webpack_require__(/*! ./dependencies */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/dependencies.js");
-const propertyNames_1 = __webpack_require__(/*! ./propertyNames */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/propertyNames.js");
-const additionalProperties_1 = __webpack_require__(/*! ./additionalProperties */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.js");
-const properties_1 = __webpack_require__(/*! ./properties */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/properties.js");
-const patternProperties_1 = __webpack_require__(/*! ./patternProperties */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/patternProperties.js");
-const not_1 = __webpack_require__(/*! ./not */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/not.js");
-const anyOf_1 = __webpack_require__(/*! ./anyOf */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/anyOf.js");
-const oneOf_1 = __webpack_require__(/*! ./oneOf */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/oneOf.js");
-const allOf_1 = __webpack_require__(/*! ./allOf */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/allOf.js");
-const if_1 = __webpack_require__(/*! ./if */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/if.js");
-const thenElse_1 = __webpack_require__(/*! ./thenElse */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/thenElse.js");
+const additionalItems_1 = __webpack_require__(7206);
+const prefixItems_1 = __webpack_require__(4049);
+const items_1 = __webpack_require__(4431);
+const items2020_1 = __webpack_require__(98);
+const contains_1 = __webpack_require__(6207);
+const dependencies_1 = __webpack_require__(7002);
+const propertyNames_1 = __webpack_require__(9354);
+const additionalProperties_1 = __webpack_require__(5589);
+const properties_1 = __webpack_require__(5033);
+const patternProperties_1 = __webpack_require__(7919);
+const not_1 = __webpack_require__(2851);
+const anyOf_1 = __webpack_require__(2157);
+const oneOf_1 = __webpack_require__(8130);
+const allOf_1 = __webpack_require__(3787);
+const if_1 = __webpack_require__(7844);
+const thenElse_1 = __webpack_require__(3515);
 function getApplicator(draft2020 = false) {
     const applicator = [
         // any
@@ -12920,19 +12792,16 @@ exports["default"] = getApplicator;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items.js ***!
-  \*********************************************************************************************************/
+/***/ 4431:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateTuple = void 0;
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const code_1 = __webpack_require__(4155);
 const def = {
     keyword: "items",
     type: "array",
@@ -12982,19 +12851,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items2020.js":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items2020.js ***!
-  \*************************************************************************************************************/
+/***/ 98:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const additionalItems_1 = __webpack_require__(/*! ./additionalItems */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalItems.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const code_1 = __webpack_require__(4155);
+const additionalItems_1 = __webpack_require__(7206);
 const error = {
     message: ({ params: { len } }) => (0, codegen_1.str) `must NOT have more than ${len} items`,
     params: ({ params: { len } }) => (0, codegen_1._) `{limit: ${len}}`,
@@ -13022,16 +12888,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/not.js":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/not.js ***!
-  \*******************************************************************************************************/
+/***/ 2851:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const util_1 = __webpack_require__(9291);
 const def = {
     keyword: "not",
     schemaType: ["object", "boolean"],
@@ -13058,17 +12921,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/oneOf.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/oneOf.js ***!
-  \*********************************************************************************************************/
+/***/ 8130:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: "must match exactly one schema in oneOf",
     params: ({ params }) => (0, codegen_1._) `{passingSchemas: ${params.passing}}`,
@@ -13128,19 +12988,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/patternProperties.js":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/patternProperties.js ***!
-  \*********************************************************************************************************************/
+/***/ 7919:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const util_2 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const code_1 = __webpack_require__(4155);
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const util_2 = __webpack_require__(9291);
 const def = {
     keyword: "patternProperties",
     type: "object",
@@ -13213,16 +13070,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/prefixItems.js":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/prefixItems.js ***!
-  \***************************************************************************************************************/
+/***/ 4049:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const items_1 = __webpack_require__(/*! ./items */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/items.js");
+const items_1 = __webpack_require__(4431);
 const def = {
     keyword: "prefixItems",
     type: "array",
@@ -13235,19 +13089,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/properties.js":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/properties.js ***!
-  \**************************************************************************************************************/
+/***/ 5033:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const validate_1 = __webpack_require__(/*! ../../compile/validate */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/index.js");
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const additionalProperties_1 = __webpack_require__(/*! ./additionalProperties */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.js");
+const validate_1 = __webpack_require__(8720);
+const code_1 = __webpack_require__(4155);
+const util_1 = __webpack_require__(9291);
+const additionalProperties_1 = __webpack_require__(5589);
 const def = {
     keyword: "properties",
     type: "object",
@@ -13299,17 +13150,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/propertyNames.js":
-/*!*****************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/propertyNames.js ***!
-  \*****************************************************************************************************************/
+/***/ 9354:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: "property name must be valid",
     params: ({ params }) => (0, codegen_1._) `{propertyName: ${params.propertyName}}`,
@@ -13347,16 +13195,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/thenElse.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/thenElse.js ***!
-  \************************************************************************************************************/
+/***/ 3515:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const util_1 = __webpack_require__(9291);
 const def = {
     keyword: ["then", "else"],
     schemaType: ["object", "boolean"],
@@ -13370,20 +13215,17 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js ***!
-  \*********************************************************************************************/
+/***/ 4155:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.validateUnion = exports.validateArray = exports.usePattern = exports.callValidateCode = exports.schemaProperties = exports.allSchemaProperties = exports.noPropertyInData = exports.propertyInData = exports.isOwnProperty = exports.hasPropFunc = exports.reportMissingProp = exports.checkMissingProp = exports.checkReportMissingProp = void 0;
-const codegen_1 = __webpack_require__(/*! ../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const names_1 = __webpack_require__(/*! ../compile/names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const util_2 = __webpack_require__(/*! ../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const names_1 = __webpack_require__(3274);
+const util_2 = __webpack_require__(9291);
 function checkReportMissingProp(cxt, prop) {
     const { gen, data, it } = cxt;
     gen.if(noPropertyInData(gen, data, prop, it.opts.ownProperties), () => {
@@ -13511,10 +13353,7 @@ exports.validateUnion = validateUnion;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/id.js":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/id.js ***!
-  \************************************************************************************************/
+/***/ 8104:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -13531,17 +13370,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/index.js":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/index.js ***!
-  \***************************************************************************************************/
+/***/ 5438:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const id_1 = __webpack_require__(/*! ./id */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/id.js");
-const ref_1 = __webpack_require__(/*! ./ref */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/ref.js");
+const id_1 = __webpack_require__(8104);
+const ref_1 = __webpack_require__(609);
 const core = [
     "$schema",
     "$id",
@@ -13557,22 +13393,19 @@ exports["default"] = core;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/ref.js":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/ref.js ***!
-  \*************************************************************************************************/
+/***/ 609:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.callRef = exports.getValidate = void 0;
-const ref_error_1 = __webpack_require__(/*! ../../compile/ref_error */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/ref_error.js");
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const names_1 = __webpack_require__(/*! ../../compile/names */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/names.js");
-const compile_1 = __webpack_require__(/*! ../../compile */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const ref_error_1 = __webpack_require__(2434);
+const code_1 = __webpack_require__(4155);
+const codegen_1 = __webpack_require__(7494);
+const names_1 = __webpack_require__(3274);
+const compile_1 = __webpack_require__(8101);
+const util_1 = __webpack_require__(9291);
 const def = {
     keyword: "$ref",
     schemaType: "string",
@@ -13689,17 +13522,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/index.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/index.js ***!
-  \************************************************************************************************************/
+/***/ 1489:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const types_1 = __webpack_require__(/*! ../discriminator/types */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/types.js");
+const codegen_1 = __webpack_require__(7494);
+const types_1 = __webpack_require__(7199);
 const error = {
     message: ({ params: { discrError, tagName } }) => discrError === types_1.DiscrError.Tag
         ? `tag "${tagName}" must be string`
@@ -13792,10 +13622,7 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/types.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/discriminator/types.js ***!
-  \************************************************************************************************************/
+/***/ 7199:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -13811,20 +13638,17 @@ var DiscrError;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/draft7.js":
-/*!***********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/draft7.js ***!
-  \***********************************************************************************************/
+/***/ 9292:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const core_1 = __webpack_require__(/*! ./core */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/core/index.js");
-const validation_1 = __webpack_require__(/*! ./validation */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/index.js");
-const applicator_1 = __webpack_require__(/*! ./applicator */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/applicator/index.js");
-const format_1 = __webpack_require__(/*! ./format */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/index.js");
-const metadata_1 = __webpack_require__(/*! ./metadata */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/metadata.js");
+const core_1 = __webpack_require__(5438);
+const validation_1 = __webpack_require__(6680);
+const applicator_1 = __webpack_require__(7460);
+const format_1 = __webpack_require__(3442);
+const metadata_1 = __webpack_require__(4914);
 const draft7Vocabularies = [
     core_1.default,
     validation_1.default,
@@ -13838,16 +13662,13 @@ exports["default"] = draft7Vocabularies;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/format.js":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/format.js ***!
-  \******************************************************************************************************/
+/***/ 4422:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const error = {
     message: ({ schemaCode }) => (0, codegen_1.str) `must match format "${schemaCode}"`,
     params: ({ schemaCode }) => (0, codegen_1._) `{format: ${schemaCode}}`,
@@ -13940,26 +13761,20 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/index.js":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/index.js ***!
-  \*****************************************************************************************************/
+/***/ 3442:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const format_1 = __webpack_require__(/*! ./format */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/format/format.js");
+const format_1 = __webpack_require__(4422);
 const format = [format_1.default];
 exports["default"] = format;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/metadata.js":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/metadata.js ***!
-  \*************************************************************************************************/
+/***/ 4914:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -13984,18 +13799,15 @@ exports.contentVocabulary = [
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/const.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/const.js ***!
-  \*********************************************************************************************************/
+/***/ 7168:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const equal_1 = __webpack_require__(/*! ../../runtime/equal */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/equal.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const equal_1 = __webpack_require__(2176);
 const error = {
     message: "must be equal to constant",
     params: ({ schemaCode }) => (0, codegen_1._) `{allowedValue: ${schemaCode}}`,
@@ -14019,18 +13831,15 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/enum.js":
-/*!********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/enum.js ***!
-  \********************************************************************************************************/
+/***/ 8243:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const equal_1 = __webpack_require__(/*! ../../runtime/equal */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/equal.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const equal_1 = __webpack_require__(2176);
 const error = {
     message: "must be equal to one of the allowed values",
     params: ({ schemaCode }) => (0, codegen_1._) `{allowedValues: ${schemaCode}}`,
@@ -14076,25 +13885,22 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/index.js":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/index.js ***!
-  \*********************************************************************************************************/
+/***/ 6680:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const limitNumber_1 = __webpack_require__(/*! ./limitNumber */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitNumber.js");
-const multipleOf_1 = __webpack_require__(/*! ./multipleOf */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/multipleOf.js");
-const limitLength_1 = __webpack_require__(/*! ./limitLength */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitLength.js");
-const pattern_1 = __webpack_require__(/*! ./pattern */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/pattern.js");
-const limitProperties_1 = __webpack_require__(/*! ./limitProperties */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitProperties.js");
-const required_1 = __webpack_require__(/*! ./required */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/required.js");
-const limitItems_1 = __webpack_require__(/*! ./limitItems */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitItems.js");
-const uniqueItems_1 = __webpack_require__(/*! ./uniqueItems */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/uniqueItems.js");
-const const_1 = __webpack_require__(/*! ./const */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/const.js");
-const enum_1 = __webpack_require__(/*! ./enum */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/enum.js");
+const limitNumber_1 = __webpack_require__(2141);
+const multipleOf_1 = __webpack_require__(5337);
+const limitLength_1 = __webpack_require__(2250);
+const pattern_1 = __webpack_require__(1160);
+const limitProperties_1 = __webpack_require__(2001);
+const required_1 = __webpack_require__(4819);
+const limitItems_1 = __webpack_require__(3578);
+const uniqueItems_1 = __webpack_require__(7815);
+const const_1 = __webpack_require__(7168);
+const enum_1 = __webpack_require__(8243);
 const validation = [
     // number
     limitNumber_1.default,
@@ -14119,16 +13925,13 @@ exports["default"] = validation;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitItems.js":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitItems.js ***!
-  \**************************************************************************************************************/
+/***/ 3578:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const error = {
     message({ keyword, schemaCode }) {
         const comp = keyword === "maxItems" ? "more" : "fewer";
@@ -14153,18 +13956,15 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitLength.js":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitLength.js ***!
-  \***************************************************************************************************************/
+/***/ 2250:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const ucs2length_1 = __webpack_require__(/*! ../../runtime/ucs2length */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/ucs2length.js");
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const ucs2length_1 = __webpack_require__(103);
 const error = {
     message({ keyword, schemaCode }) {
         const comp = keyword === "maxLength" ? "more" : "fewer";
@@ -14190,16 +13990,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitNumber.js":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitNumber.js ***!
-  \***************************************************************************************************************/
+/***/ 2141:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const ops = codegen_1.operators;
 const KWDs = {
     maximum: { okStr: "<=", ok: ops.LTE, fail: ops.GT },
@@ -14227,16 +14024,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitProperties.js":
-/*!*******************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/limitProperties.js ***!
-  \*******************************************************************************************************************/
+/***/ 2001:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const error = {
     message({ keyword, schemaCode }) {
         const comp = keyword === "maxProperties" ? "more" : "fewer";
@@ -14261,16 +14055,13 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/multipleOf.js":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/multipleOf.js ***!
-  \**************************************************************************************************************/
+/***/ 5337:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const codegen_1 = __webpack_require__(7494);
 const error = {
     message: ({ schemaCode }) => (0, codegen_1.str) `must be multiple of ${schemaCode}`,
     params: ({ schemaCode }) => (0, codegen_1._) `{multipleOf: ${schemaCode}}`,
@@ -14297,17 +14088,14 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/pattern.js":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/pattern.js ***!
-  \***********************************************************************************************************/
+/***/ 1160:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
+const code_1 = __webpack_require__(4155);
+const codegen_1 = __webpack_require__(7494);
 const error = {
     message: ({ schemaCode }) => (0, codegen_1.str) `must match pattern "${schemaCode}"`,
     params: ({ schemaCode }) => (0, codegen_1._) `{pattern: ${schemaCode}}`,
@@ -14331,18 +14119,15 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/required.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/required.js ***!
-  \************************************************************************************************************/
+/***/ 4819:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const code_1 = __webpack_require__(/*! ../code */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/code.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
+const code_1 = __webpack_require__(4155);
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
 const error = {
     message: ({ params: { missingProperty } }) => (0, codegen_1.str) `must have required property '${missingProperty}'`,
     params: ({ params: { missingProperty } }) => (0, codegen_1._) `{missingProperty: ${missingProperty}}`,
@@ -14420,19 +14205,16 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/uniqueItems.js":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/vocabularies/validation/uniqueItems.js ***!
-  \***************************************************************************************************************/
+/***/ 7815:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const dataType_1 = __webpack_require__(/*! ../../compile/validate/dataType */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/validate/dataType.js");
-const codegen_1 = __webpack_require__(/*! ../../compile/codegen */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/codegen/index.js");
-const util_1 = __webpack_require__(/*! ../../compile/util */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/compile/util.js");
-const equal_1 = __webpack_require__(/*! ../../runtime/equal */ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/runtime/equal.js");
+const dataType_1 = __webpack_require__(5432);
+const codegen_1 = __webpack_require__(7494);
+const util_1 = __webpack_require__(9291);
+const equal_1 = __webpack_require__(2176);
 const error = {
     message: ({ params: { i, j } }) => (0, codegen_1.str) `must NOT have duplicate items (items ## ${j} and ${i} are identical)`,
     params: ({ params: { i, j } }) => (0, codegen_1._) `{i: ${i}, j: ${j}}`,
@@ -14494,10 +14276,7 @@ exports["default"] = def;
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/json-schema-traverse/index.js":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/json-schema-traverse/index.js ***!
-  \*********************************************************************************************/
+/***/ 5473:
 /***/ ((module) => {
 
 "use strict";
@@ -14598,10 +14377,7 @@ function escapeJsonPtr(str) {
 
 /***/ }),
 
-/***/ "./node_modules/fast-deep-equal/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/fast-deep-equal/index.js ***!
-  \***********************************************/
+/***/ 4063:
 /***/ ((module) => {
 
 "use strict";
@@ -14655,1053 +14431,87 @@ module.exports = function equal(a, b) {
 
 /***/ }),
 
-/***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GatsbyImage": () => (/* binding */ Y),
-/* harmony export */   "MainImage": () => (/* binding */ q),
-/* harmony export */   "Placeholder": () => (/* binding */ C),
-/* harmony export */   "StaticImage": () => (/* binding */ J),
-/* harmony export */   "generateImageData": () => (/* binding */ y),
-/* harmony export */   "getImage": () => (/* binding */ R),
-/* harmony export */   "getImageData": () => (/* binding */ W),
-/* harmony export */   "getLowResolutionImageURL": () => (/* binding */ w),
-/* harmony export */   "getSrc": () => (/* binding */ x),
-/* harmony export */   "getSrcSet": () => (/* binding */ I),
-/* harmony export */   "withArtDirection": () => (/* binding */ j)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! common-tags */ "./node_modules/common-tags/es/index.js");
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! camelcase */ "./node_modules/gatsby-plugin-image/node_modules/camelcase/index.js");
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-
-
-function s() {
-  return s = Object.assign || function (e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var a = arguments[t];
-
-      for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
-    }
-
-    return e;
-  }, s.apply(this, arguments);
-}
-
-function l(e, t) {
-  if (null == e) return {};
-  var a,
-      i,
-      r = {},
-      n = Object.keys(e);
-
-  for (i = 0; i < n.length; i++) t.indexOf(a = n[i]) >= 0 || (r[a] = e[a]);
-
-  return r;
-}
-
-var d,
-    u = [.25, .5, 1, 2],
-    c = [750, 1080, 1366, 1920],
-    h = [320, 654, 768, 1024, 1366, 1600, 1920, 2048, 2560, 3440, 3840, 4096],
-    g = function (e) {
-  return console.warn(e);
-},
-    p = function (e, t) {
-  return e - t;
-},
-    m = function (e) {
-  return e.map(function (e) {
-    return e.src + " " + e.width + "w";
-  }).join(",\n");
-};
-
-function f(e) {
-  var t = e.lastIndexOf(".");
-
-  if (-1 !== t) {
-    var a = e.substr(t + 1);
-    if ("jpeg" === a) return "jpg";
-    if (3 === a.length || 4 === a.length) return a;
-  }
-}
-
-function v(e) {
-  var t = e.layout,
-      a = void 0 === t ? "constrained" : t,
-      i = e.width,
-      n = e.height,
-      o = e.sourceMetadata,
-      l = e.breakpoints,
-      d = e.aspectRatio,
-      u = e.formats,
-      c = void 0 === u ? ["auto", "webp"] : u;
-  return c = c.map(function (e) {
-    return e.toLowerCase();
-  }), a = camelcase__WEBPACK_IMPORTED_MODULE_2___default()(a), i && n ? s({}, e, {
-    formats: c,
-    layout: a,
-    aspectRatio: i / n
-  }) : (o.width && o.height && !d && (d = o.width / o.height), "fullWidth" === a ? (i = i || o.width || l[l.length - 1], n = n || Math.round(i / (d || 1.3333333333333333))) : (i || (i = n && d ? n * d : o.width ? o.width : n ? Math.round(n / 1.3333333333333333) : 800), d && !n ? n = Math.round(i / d) : d || (d = i / n)), s({}, e, {
-    width: i,
-    height: n,
-    aspectRatio: d,
-    layout: a,
-    formats: c
-  }));
-}
-
-function w(e, t) {
-  var a;
-  return void 0 === t && (t = 20), null == (a = (0, (e = v(e)).generateImageSource)(e.filename, t, Math.round(t / e.aspectRatio), e.sourceMetadata.format || "jpg", e.fit, e.options)) ? void 0 : a.src;
-}
-
-function y(e) {
-  var t,
-      a = (e = v(e)).pluginName,
-      r = e.sourceMetadata,
-      n = e.generateImageSource,
-      o = e.layout,
-      l = e.fit,
-      h = e.options,
-      p = e.width,
-      w = e.height,
-      y = e.filename,
-      M = e.reporter,
-      S = void 0 === M ? {
-    warn: g
-  } : M,
-      N = e.backgroundColor,
-      R = e.placeholderURL;
-  if (a || S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'), "function" != typeof n) throw new Error("generateImageSource must be a function");
-  r && (r.width || r.height) ? r.format || (r.format = f(y)) : r = {
-    width: p,
-    height: w,
-    format: (null == (t = r) ? void 0 : t.format) || f(y) || "auto"
-  };
-  var x = new Set(e.formats);
-  (0 === x.size || x.has("auto") || x.has("")) && (x.delete("auto"), x.delete(""), x.add(r.format)), x.has("jpg") && x.has("png") && (S.warn("[" + a + "] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"), x.delete("jpg" === r.format ? "png" : "jpg"));
-
-  var I = function (e) {
-    var t = e.filename,
-        a = e.layout,
-        r = void 0 === a ? "constrained" : a,
-        n = e.sourceMetadata,
-        o = e.reporter,
-        l = void 0 === o ? {
-      warn: g
-    } : o,
-        h = e.breakpoints,
-        p = void 0 === h ? c : h,
-        m = Object.entries({
-      width: e.width,
-      height: e.height
-    }).filter(function (e) {
-      var t = e[1];
-      return "number" == typeof t && t < 1;
-    });
-    if (m.length) throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are " + m.map(function (e) {
-      return e.join(": ");
-    }).join(", "));
-    return "fixed" === r ? function (e) {
-      var t = e.filename,
-          a = e.sourceMetadata,
-          r = e.width,
-          n = e.height,
-          o = e.fit,
-          s = void 0 === o ? "cover" : o,
-          l = e.outputPixelDensities,
-          c = e.reporter,
-          h = void 0 === c ? {
-        warn: g
-      } : c,
-          p = a.width / a.height,
-          m = b(void 0 === l ? u : l);
-
-      if (r && n) {
-        var f = k(a, {
-          width: r,
-          height: n,
-          fit: s
-        });
-        r = f.width, n = f.height, p = f.aspectRatio;
-      }
-
-      r ? n || (n = Math.round(r / p)) : r = n ? Math.round(n * p) : 800;
-      var v,
-          w,
-          y = r;
-
-      if (a.width < r || a.height < n) {
-        var E = a.width < r ? "width" : "height";
-        h.warn((0,common_tags__WEBPACK_IMPORTED_MODULE_1__.stripIndent)(d || (v = ["\n    The requested ", ' "', 'px" for the image ', " was larger than the actual image ", " of ", "px. If possible, replace the current image with a larger one."], w || (w = v.slice(0)), v.raw = w, d = v), E, "width" === E ? r : n, t, E, a[E])), "width" === E ? (r = a.width, n = Math.round(r / p)) : r = (n = a.height) * p;
-      }
-
-      return {
-        sizes: m.filter(function (e) {
-          return e >= 1;
-        }).map(function (e) {
-          return Math.round(e * r);
-        }).filter(function (e) {
-          return e <= a.width;
-        }),
-        aspectRatio: p,
-        presentationWidth: y,
-        presentationHeight: Math.round(y / p),
-        unscaledWidth: r
-      };
-    }(e) : "constrained" === r ? E(e) : "fullWidth" === r ? E(s({
-      breakpoints: p
-    }, e)) : (l.warn("No valid layout was provided for the image at " + t + ". Valid image layouts are fixed, fullWidth, and constrained. Found " + r), {
-      sizes: [n.width],
-      presentationWidth: n.width,
-      presentationHeight: n.height,
-      aspectRatio: n.width / n.height,
-      unscaledWidth: n.width
-    });
-  }(s({}, e, {
-    sourceMetadata: r
-  })),
-      W = {
-    sources: []
-  },
-      j = e.sizes;
-
-  j || (j = function (e, t) {
-    switch (t) {
-      case "constrained":
-        return "(min-width: " + e + "px) " + e + "px, 100vw";
-
-      case "fixed":
-        return e + "px";
-
-      case "fullWidth":
-        return "100vw";
-
-      default:
-        return;
-    }
-  }(I.presentationWidth, o)), x.forEach(function (e) {
-    var t = I.sizes.map(function (t) {
-      var i = n(y, t, Math.round(t / I.aspectRatio), e, l, h);
-      if (null != i && i.width && i.height && i.src && i.format) return i;
-      S.warn("[" + a + "] The resolver for image " + y + " returned an invalid value.");
-    }).filter(Boolean);
-
-    if ("jpg" === e || "png" === e || "auto" === e) {
-      var i = t.find(function (e) {
-        return e.width === I.unscaledWidth;
-      }) || t[0];
-      i && (W.fallback = {
-        src: i.src,
-        srcSet: m(t),
-        sizes: j
-      });
-    } else {
-      var r;
-      null == (r = W.sources) || r.push({
-        srcSet: m(t),
-        sizes: j,
-        type: "image/" + e
-      });
-    }
-  });
-  var _ = {
-    images: W,
-    layout: o,
-    backgroundColor: N
-  };
-
-  switch (R && (_.placeholder = {
-    fallback: R
-  }), o) {
-    case "fixed":
-      _.width = I.presentationWidth, _.height = I.presentationHeight;
-      break;
-
-    case "fullWidth":
-      _.width = 1, _.height = 1 / I.aspectRatio;
-      break;
-
-    case "constrained":
-      _.width = e.width || I.presentationWidth || 1, _.height = (_.width || 1) / I.aspectRatio;
-  }
-
-  return _;
-}
-
-var b = function (e) {
-  return Array.from(new Set([1].concat(e))).sort(p);
-};
-
-function E(e) {
-  var t,
-      a = e.sourceMetadata,
-      i = e.width,
-      r = e.height,
-      n = e.fit,
-      o = void 0 === n ? "cover" : n,
-      s = e.outputPixelDensities,
-      l = e.breakpoints,
-      d = e.layout,
-      c = a.width / a.height,
-      h = b(void 0 === s ? u : s);
-
-  if (i && r) {
-    var g = k(a, {
-      width: i,
-      height: r,
-      fit: o
-    });
-    i = g.width, r = g.height, c = g.aspectRatio;
-  }
-
-  i = i && Math.min(i, a.width), r = r && Math.min(r, a.height), i || r || (r = (i = Math.min(800, a.width)) / c), i || (i = r * c);
-  var m = i;
-  return (a.width < i || a.height < r) && (i = a.width, r = a.height), i = Math.round(i), (null == l ? void 0 : l.length) > 0 ? (t = l.filter(function (e) {
-    return e <= a.width;
-  })).length < l.length && !t.includes(a.width) && t.push(a.width) : t = (t = h.map(function (e) {
-    return Math.round(e * i);
-  })).filter(function (e) {
-    return e <= a.width;
-  }), "constrained" !== d || t.includes(i) || t.push(i), {
-    sizes: t = t.sort(p),
-    aspectRatio: c,
-    presentationWidth: m,
-    presentationHeight: Math.round(m / c),
-    unscaledWidth: i
-  };
-}
-
-function k(e, t) {
-  var a = e.width / e.height,
-      i = t.width,
-      r = t.height;
-
-  switch (t.fit) {
-    case "fill":
-      i = t.width ? t.width : e.width, r = t.height ? t.height : e.height;
-      break;
-
-    case "inside":
-      var n = t.width ? t.width : Number.MAX_SAFE_INTEGER,
-          o = t.height ? t.height : Number.MAX_SAFE_INTEGER;
-      i = Math.min(n, Math.round(o * a)), r = Math.min(o, Math.round(n / a));
-      break;
-
-    case "outside":
-      var s = t.width ? t.width : 0,
-          l = t.height ? t.height : 0;
-      i = Math.max(s, Math.round(l * a)), r = Math.max(l, Math.round(s / a));
-      break;
-
-    default:
-      t.width && !t.height && (i = t.width, r = Math.round(t.width / a)), t.height && !t.width && (i = Math.round(t.height * a), r = t.height);
-  }
-
-  return {
-    width: i,
-    height: r,
-    aspectRatio: i / r
-  };
-}
-
-var M = ["baseUrl", "urlBuilder", "sourceWidth", "sourceHeight", "pluginName", "formats", "breakpoints", "options"],
-    S = ["images", "placeholder"];
-
-function N() {
-  return "undefined" != typeof GATSBY___IMAGE && GATSBY___IMAGE;
-}
-
-new Set();
-
-var R = function (e) {
-  var t;
-  return function (e) {
-    var t, a;
-    return Boolean(null == e || null == (t = e.images) || null == (a = t.fallback) ? void 0 : a.src);
-  }(e) ? e : function (e) {
-    return Boolean(null == e ? void 0 : e.gatsbyImageData);
-  }(e) ? e.gatsbyImageData : null == e || null == (t = e.childImageSharp) ? void 0 : t.gatsbyImageData;
-},
-    x = function (e) {
-  var t, a, i;
-  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.src;
-},
-    I = function (e) {
-  var t, a, i;
-  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.srcSet;
-};
-
-function W(e) {
-  var t,
-      a = e.baseUrl,
-      i = e.urlBuilder,
-      r = e.sourceWidth,
-      n = e.sourceHeight,
-      o = e.pluginName,
-      d = void 0 === o ? "getImageData" : o,
-      u = e.formats,
-      c = void 0 === u ? ["auto"] : u,
-      g = e.breakpoints,
-      p = e.options,
-      m = l(e, M);
-  return null != (t = g) && t.length || "fullWidth" !== m.layout && "FULL_WIDTH" !== m.layout || (g = h), y(s({}, m, {
-    pluginName: d,
-    generateImageSource: function (e, t, a, r) {
-      return {
-        width: t,
-        height: a,
-        format: r,
-        src: i({
-          baseUrl: e,
-          width: t,
-          height: a,
-          options: p,
-          format: r
-        })
-      };
-    },
-    filename: a,
-    formats: c,
-    breakpoints: g,
-    sourceMetadata: {
-      width: r,
-      height: n,
-      format: "auto"
-    }
-  }));
-}
-
-function j(e, t) {
-  var a,
-      i,
-      r,
-      n = e.images,
-      o = e.placeholder,
-      d = s({}, l(e, S), {
-    images: s({}, n, {
-      sources: []
-    }),
-    placeholder: o && s({}, o, {
-      sources: []
-    })
-  });
-  return t.forEach(function (t) {
-    var a,
-        i = t.media,
-        r = t.image;
-    i ? (r.layout !== e.layout && "development" === "development" && console.warn('[gatsby-plugin-image] Mismatched image layout: expected "' + e.layout + '" but received "' + r.layout + '". All art-directed images use the same layout as the default image'), (a = d.images.sources).push.apply(a, r.images.sources.map(function (e) {
-      return s({}, e, {
-        media: i
-      });
-    }).concat([{
-      media: i,
-      srcSet: r.images.fallback.srcSet
-    }])), d.placeholder && d.placeholder.sources.push({
-      media: i,
-      srcSet: r.placeholder.fallback
-    })) :  true && console.warn("[gatsby-plugin-image] All art-directed images passed to must have a value set for `media`. Skipping.");
-  }), (a = d.images.sources).push.apply(a, n.sources), null != o && o.sources && (null == (i = d.placeholder) || (r = i.sources).push.apply(r, o.sources)), d;
-}
-
-var _,
-    T = ["src", "srcSet", "loading", "alt", "shouldLoad", "innerRef"],
-    A = ["fallback", "sources", "shouldLoad"],
-    O = function (t) {
-  var a = t.src,
-      i = t.srcSet,
-      r = t.loading,
-      n = t.alt,
-      o = void 0 === n ? "" : n,
-      d = t.shouldLoad,
-      u = t.innerRef,
-      c = l(t, T);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", s({}, c, {
-    decoding: "async",
-    loading: r,
-    src: d ? a : void 0,
-    "data-src": d ? void 0 : a,
-    srcSet: d ? i : void 0,
-    "data-srcset": d ? void 0 : i,
-    alt: o,
-    ref: u
-  }));
-},
-    z = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
-  var i = t.fallback,
-      r = t.sources,
-      n = void 0 === r ? [] : r,
-      o = t.shouldLoad,
-      d = void 0 === o || o,
-      u = l(t, A),
-      c = u.sizes || (null == i ? void 0 : i.sizes),
-      h = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(O, s({}, u, i, {
-    sizes: c,
-    shouldLoad: d,
-    innerRef: a
-  }));
-  return n.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture", null, n.map(function (t) {
-    var a = t.media,
-        i = t.srcSet,
-        r = t.type;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
-      key: a + "-" + r + "-" + i,
-      type: r,
-      media: a,
-      srcSet: d ? i : void 0,
-      "data-srcset": d ? void 0 : i,
-      sizes: c
-    });
-  }), h) : h;
-});
-
-O.propTypes = {
-  src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool
-}, z.displayName = "Picture", z.propTypes = {
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__.bool,
-  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    src: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string
-  }),
-  sources: prop_types__WEBPACK_IMPORTED_MODULE_3__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
-  }), prop_types__WEBPACK_IMPORTED_MODULE_3__.exact({
-    media: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    type: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired,
-    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__.string.isRequired
-  })]))
-};
-
-var L = ["fallback"],
-    C = function (t) {
-  var a = t.fallback,
-      i = l(t, L);
-  return a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, i, {
-    fallback: {
-      src: a
-    },
-    "aria-hidden": !0,
-    alt: ""
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", s({}, i));
-};
-
-C.displayName = "Placeholder", C.propTypes = {
-  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__.string,
-  sources: null == (_ = z.propTypes) ? void 0 : _.sources,
-  alt: function (e, t, a) {
-    return e[t] ? new Error("Invalid prop `" + t + "` supplied to `" + a + "`. Validation failed.") : null;
-  }
-};
-var q = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (t, a) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({
-    ref: a
-  }, t)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, s({}, t, {
-    shouldLoad: !0
-  }))));
-});
-q.displayName = "MainImage", q.propTypes = z.propTypes;
-
-var D = ["children"],
-    P = function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
-    type: "module",
-    dangerouslySetInnerHTML: {
-      __html: 'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'
-    }
-  });
-},
-    H = function (t) {
-  var a = t.layout,
-      i = t.width,
-      r = t.height;
-  return "fullWidth" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    "aria-hidden": !0,
-    style: {
-      paddingTop: r / i * 100 + "%"
-    }
-  }) : "constrained" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      maxWidth: i,
-      display: "block"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    alt: "",
-    role: "presentation",
-    "aria-hidden": "true",
-    src: "data:image/svg+xml;charset=utf-8,%3Csvg height='" + r + "' width='" + i + "' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
-    style: {
-      maxWidth: "100%",
-      display: "block",
-      position: "static"
-    }
-  })) : null;
-},
-    F = function (t) {
-  var i = t.children,
-      r = l(t, D);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(H, s({}, r)), i, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(P, null));
-},
-    B = ["as", "children"],
-    G = ["as", "className", "class", "style", "image", "loading", "imgClassName", "imgStyle", "backgroundColor", "objectFit", "objectPosition"],
-    V = ["style", "className"],
-    U = function (e) {
-  return e.replace(/\n/g, "");
-},
-    X = function (t) {
-  var a = t.as,
-      i = void 0 === a ? "div" : a,
-      r = t.children,
-      n = l(t, B);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i, s({}, n), r);
-},
-    Y = function (t) {
-  var a = t.as,
-      i = t.className,
-      r = t.class,
-      n = t.style,
-      o = t.image,
-      d = t.loading,
-      u = void 0 === d ? "lazy" : d,
-      c = t.imgClassName,
-      h = t.imgStyle,
-      g = t.backgroundColor,
-      p = t.objectFit,
-      m = t.objectPosition,
-      f = l(t, G);
-  if (!o) return console.warn("[gatsby-plugin-image] Missing image prop"), null;
-  r && (i = r), h = s({
-    objectFit: p,
-    objectPosition: m,
-    backgroundColor: g
-  }, h);
-
-  var v = o.width,
-      w = o.height,
-      y = o.layout,
-      b = o.images,
-      E = o.placeholder,
-      k = o.backgroundColor,
-      M = function (e, t, a) {
-    var i = {},
-        r = "gatsby-image-wrapper";
-    return N() || (i.position = "relative", i.overflow = "hidden"), "fixed" === a ? (i.width = e, i.height = t) : "constrained" === a && (N() || (i.display = "inline-block", i.verticalAlign = "top"), r = "gatsby-image-wrapper gatsby-image-wrapper-constrained"), {
-      className: r,
-      "data-gatsby-image-wrapper": "",
-      style: i
-    };
-  }(v, w, y),
-      S = M.style,
-      R = M.className,
-      x = l(M, V),
-      I = {
-    fallback: void 0,
-    sources: []
-  };
-
-  return b.fallback && (I.fallback = s({}, b.fallback, {
-    srcSet: b.fallback.srcSet ? U(b.fallback.srcSet) : void 0
-  })), b.sources && (I.sources = b.sources.map(function (e) {
-    return s({}, e, {
-      srcSet: U(e.srcSet)
-    });
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(X, s({}, x, {
-    as: a,
-    style: s({}, S, n, {
-      backgroundColor: g
-    }),
-    className: R + (i ? " " + i : "")
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(F, {
-    layout: y,
-    width: v,
-    height: w
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C, s({}, function (e, t, a, i, r, n, o, l) {
-    var d = {};
-    n && (d.backgroundColor = n, "fixed" === a ? (d.width = i, d.height = r, d.backgroundColor = n, d.position = "relative") : ("constrained" === a || "fullWidth" === a) && (d.position = "absolute", d.top = 0, d.left = 0, d.bottom = 0, d.right = 0)), o && (d.objectFit = o), l && (d.objectPosition = l);
-    var u = s({}, e, {
-      "aria-hidden": !0,
-      "data-placeholder-image": "",
-      style: s({
-        opacity: 1,
-        transition: "opacity 500ms linear"
-      }, d)
-    });
-    return N() || (u.style = {
-      height: "100%",
-      left: 0,
-      position: "absolute",
-      top: 0,
-      width: "100%"
-    }), u;
-  }(E, 0, y, v, w, k, p, m))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q, s({
-    "data-gatsby-image-ssr": "",
-    className: c
-  }, f, function (e, t, a, i, r, n, o, l) {
-    return void 0 === l && (l = {}), N() || (l = s({
-      height: "100%",
-      left: 0,
-      position: "absolute",
-      top: 0,
-      transform: "translateZ(0)",
-      transition: "opacity 250ms linear",
-      width: "100%",
-      willChange: "opacity"
-    }, l)), s({}, a, {
-      loading: i,
-      shouldLoad: e,
-      "data-main-image": "",
-      style: s({}, l, {
-        opacity: 0
-      }),
-      onLoad: function (e) {
-        var t = e.currentTarget,
-            a = new Image();
-        a.src = t.currentSrc, a.decode ? a.decode().catch(function () {}).then(function () {
-          r(!0);
-        }) : r(!0);
-      },
-      ref: void 0
-    });
-  }("eager" === u, 0, I, u, void 0, 0, 0, h)))));
-},
-    Z = ["src", "__imageData", "__error", "width", "height", "aspectRatio", "tracedSVGOptions", "placeholder", "formats", "quality", "transformOptions", "jpgOptions", "pngOptions", "webpOptions", "avifOptions", "blurredOptions"],
-    J = function (t) {
-  return function (a) {
-    var i = a.src,
-        r = a.__imageData,
-        n = a.__error,
-        o = l(a, Z);
-    return n && console.warn(n), r ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t, s({
-      image: r
-    }, o)) : (console.warn("Image not loaded", i), n || "development" !== "development" || console.warn('Please ensure that "gatsby-plugin-image" is included in the plugins array in gatsby-config.js, and that your version of gatsby is at least 2.24.78'), null);
-  };
-}(Y),
-    K = function (e, t) {
-  return "fullWidth" !== e.layout || "width" !== t && "height" !== t || !e[t] ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t].concat([].slice.call(arguments, 2))) : new Error('"' + t + '" ' + e[t] + " may not be passed when layout is fullWidth.");
-},
-    Q = new Set(["fixed", "fullWidth", "constrained"]),
-    $ = {
-  src: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
-  alt: function (e, t, a) {
-    return e.alt || "" === e.alt ? prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_3___default()), [e, t, a].concat([].slice.call(arguments, 3))) : new Error('The "alt" prop is required in ' + a + '. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');
-  },
-  width: K,
-  height: K,
-  sizes: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
-  layout: function (e) {
-    if (void 0 !== e.layout && !Q.has(e.layout)) return new Error("Invalid value " + e.layout + '" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');
-  }
-};
-
-J.displayName = "StaticImage", J.propTypes = $;
-
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-image/node_modules/camelcase/index.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-image/node_modules/camelcase/index.js ***!
-  \**************************************************************************/
+/***/ 1224:
 /***/ ((module) => {
 
 "use strict";
-
-
-const preserveCamelCase = string => {
-  let isLastCharLower = false;
-  let isLastCharUpper = false;
-  let isLastLastCharUpper = false;
-
-  for (let i = 0; i < string.length; i++) {
-    const character = string[i];
-
-    if (isLastCharLower && /[a-zA-Z]/.test(character) && character.toUpperCase() === character) {
-      string = string.slice(0, i) + '-' + string.slice(i);
-      isLastCharLower = false;
-      isLastLastCharUpper = isLastCharUpper;
-      isLastCharUpper = true;
-      i++;
-    } else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(character) && character.toLowerCase() === character) {
-      string = string.slice(0, i - 1) + '-' + string.slice(i - 1);
-      isLastLastCharUpper = isLastCharUpper;
-      isLastCharUpper = false;
-      isLastCharLower = true;
-    } else {
-      isLastCharLower = character.toLowerCase() === character && character.toUpperCase() !== character;
-      isLastLastCharUpper = isLastCharUpper;
-      isLastCharUpper = character.toUpperCase() === character && character.toLowerCase() !== character;
-    }
-  }
-
-  return string;
-};
-
-const camelCase = (input, options) => {
-  if (!(typeof input === 'string' || Array.isArray(input))) {
-    throw new TypeError('Expected the input to be `string | string[]`');
-  }
-
-  options = Object.assign({
-    pascalCase: false
-  }, options);
-
-  const postProcess = x => options.pascalCase ? x.charAt(0).toUpperCase() + x.slice(1) : x;
-
-  if (Array.isArray(input)) {
-    input = input.map(x => x.trim()).filter(x => x.length).join('-');
-  } else {
-    input = input.trim();
-  }
-
-  if (input.length === 0) {
-    return '';
-  }
-
-  if (input.length === 1) {
-    return options.pascalCase ? input.toUpperCase() : input.toLowerCase();
-  }
-
-  const hasUpperCase = input !== input.toLowerCase();
-
-  if (hasUpperCase) {
-    input = preserveCamelCase(input);
-  }
-
-  input = input.replace(/^[_.\- ]+/, '').toLowerCase().replace(/[_.\- ]+(\w|$)/g, (_, p1) => p1.toUpperCase()).replace(/\d+(\w|$)/g, m => m.toUpperCase());
-  return postProcess(input);
-};
-
-module.exports = camelCase; // TODO: Remove this for the next major release
-
-module.exports["default"] = camelCase;
+const preserveCamelCase=string=>{let isLastCharLower=false;let isLastCharUpper=false;let isLastLastCharUpper=false;for(let i=0;i<string.length;i++){const character=string[i];if(isLastCharLower&&/[a-zA-Z]/.test(character)&&character.toUpperCase()===character){string=string.slice(0,i)+'-'+string.slice(i);isLastCharLower=false;isLastLastCharUpper=isLastCharUpper;isLastCharUpper=true;i++;}else if(isLastCharUpper&&isLastLastCharUpper&&/[a-zA-Z]/.test(character)&&character.toLowerCase()===character){string=string.slice(0,i-1)+'-'+string.slice(i-1);isLastLastCharUpper=isLastCharUpper;isLastCharUpper=false;isLastCharLower=true;}else{isLastCharLower=character.toLowerCase()===character&&character.toUpperCase()!==character;isLastLastCharUpper=isLastCharUpper;isLastCharUpper=character.toUpperCase()===character&&character.toLowerCase()!==character;}}return string;};const camelCase=(input,options)=>{if(!(typeof input==='string'||Array.isArray(input))){throw new TypeError('Expected the input to be `string | string[]`');}options=Object.assign({pascalCase:false},options);const postProcess=x=>options.pascalCase?x.charAt(0).toUpperCase()+x.slice(1):x;if(Array.isArray(input)){input=input.map(x=>x.trim()).filter(x=>x.length).join('-');}else{input=input.trim();}if(input.length===0){return'';}if(input.length===1){return options.pascalCase?input.toUpperCase():input.toLowerCase();}const hasUpperCase=input!==input.toLowerCase();if(hasUpperCase){input=preserveCamelCase(input);}input=input.replace(/^[_.\- ]+/,'').toLowerCase().replace(/[_.\- ]+(\w|$)/g,(_,p1)=>p1.toUpperCase()).replace(/\d+(\w|$)/g,m=>m.toUpperCase());return postProcess(input);};module.exports=camelCase;// TODO: Remove this for the next major release
+module.exports["default"]=camelCase;
 
 /***/ }),
 
-/***/ "./src/components/bio.js":
-/*!*******************************!*\
-  !*** ./src/components/bio.js ***!
-  \*******************************/
+/***/ 4483:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3257411868.json */ "./public/page-data/sq/d/3257411868.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ bio)
+});
 
+// EXTERNAL MODULE: external "/home/azmat/Desktop/cnc/gatsby_blog_site_netlify/node_modules/react/index.js"
+var index_js_ = __webpack_require__(5952);
+var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
+// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
+var gatsby_browser_entry = __webpack_require__(2031);
+// EXTERNAL MODULE: ./node_modules/common-tags/es/index.js + 41 modules
+var es = __webpack_require__(5863);
+// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/node_modules/camelcase/index.js
+var camelcase = __webpack_require__(1224);
+// EXTERNAL MODULE: ./node_modules/prop-types/index.js
+var prop_types = __webpack_require__(5697);
+var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
+;// CONCATENATED MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
+function s(){return s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var a=arguments[t];for(var i in a)Object.prototype.hasOwnProperty.call(a,i)&&(e[i]=a[i]);}return e;},s.apply(this,arguments);}function l(e,t){if(null==e)return{};var a,i,r={},n=Object.keys(e);for(i=0;i<n.length;i++)t.indexOf(a=n[i])>=0||(r[a]=e[a]);return r;}var d,u=(/* unused pure expression or super */ null && ([.25,.5,1,2])),c=(/* unused pure expression or super */ null && ([750,1080,1366,1920])),h=(/* unused pure expression or super */ null && ([320,654,768,1024,1366,1600,1920,2048,2560,3440,3840,4096])),g=function(e){return console.warn(e);},p=function(e,t){return e-t;},m=function(e){return e.map(function(e){return e.src+" "+e.width+"w";}).join(",\n");};function f(e){var t=e.lastIndexOf(".");if(-1!==t){var a=e.substr(t+1);if("jpeg"===a)return"jpg";if(3===a.length||4===a.length)return a;}}function v(e){var t=e.layout,a=void 0===t?"constrained":t,i=e.width,n=e.height,o=e.sourceMetadata,l=e.breakpoints,d=e.aspectRatio,u=e.formats,c=void 0===u?["auto","webp"]:u;return c=c.map(function(e){return e.toLowerCase();}),a=r(a),i&&n?s({},e,{formats:c,layout:a,aspectRatio:i/n}):(o.width&&o.height&&!d&&(d=o.width/o.height),"fullWidth"===a?(i=i||o.width||l[l.length-1],n=n||Math.round(i/(d||1.3333333333333333))):(i||(i=n&&d?n*d:o.width?o.width:n?Math.round(n/1.3333333333333333):800),d&&!n?n=Math.round(i/d):d||(d=i/n)),s({},e,{width:i,height:n,aspectRatio:d,layout:a,formats:c}));}function w(e,t){var a;return void 0===t&&(t=20),null==(a=(0,(e=v(e)).generateImageSource)(e.filename,t,Math.round(t/e.aspectRatio),e.sourceMetadata.format||"jpg",e.fit,e.options))?void 0:a.src;}function y(e){var t,a=(e=v(e)).pluginName,r=e.sourceMetadata,n=e.generateImageSource,o=e.layout,l=e.fit,h=e.options,p=e.width,w=e.height,y=e.filename,M=e.reporter,S=void 0===M?{warn:g}:M,N=e.backgroundColor,R=e.placeholderURL;if(a||S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'),"function"!=typeof n)throw new Error("generateImageSource must be a function");r&&(r.width||r.height)?r.format||(r.format=f(y)):r={width:p,height:w,format:(null==(t=r)?void 0:t.format)||f(y)||"auto"};var x=new Set(e.formats);(0===x.size||x.has("auto")||x.has(""))&&(x.delete("auto"),x.delete(""),x.add(r.format)),x.has("jpg")&&x.has("png")&&(S.warn("["+a+"] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"),x.delete("jpg"===r.format?"png":"jpg"));var I=function(e){var t=e.filename,a=e.layout,r=void 0===a?"constrained":a,n=e.sourceMetadata,o=e.reporter,l=void 0===o?{warn:g}:o,h=e.breakpoints,p=void 0===h?c:h,m=Object.entries({width:e.width,height:e.height}).filter(function(e){var t=e[1];return"number"==typeof t&&t<1;});if(m.length)throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are "+m.map(function(e){return e.join(": ");}).join(", "));return"fixed"===r?function(e){var t=e.filename,a=e.sourceMetadata,r=e.width,n=e.height,o=e.fit,s=void 0===o?"cover":o,l=e.outputPixelDensities,c=e.reporter,h=void 0===c?{warn:g}:c,p=a.width/a.height,m=b(void 0===l?u:l);if(r&&n){var f=k(a,{width:r,height:n,fit:s});r=f.width,n=f.height,p=f.aspectRatio;}r?n||(n=Math.round(r/p)):r=n?Math.round(n*p):800;var v,w,y=r;if(a.width<r||a.height<n){var E=a.width<r?"width":"height";h.warn(i(d||(v=["\n    The requested ",' "','px" for the image '," was larger than the actual image "," of ","px. If possible, replace the current image with a larger one."],w||(w=v.slice(0)),v.raw=w,d=v),E,"width"===E?r:n,t,E,a[E])),"width"===E?(r=a.width,n=Math.round(r/p)):r=(n=a.height)*p;}return{sizes:m.filter(function(e){return e>=1;}).map(function(e){return Math.round(e*r);}).filter(function(e){return e<=a.width;}),aspectRatio:p,presentationWidth:y,presentationHeight:Math.round(y/p),unscaledWidth:r};}(e):"constrained"===r?E(e):"fullWidth"===r?E(s({breakpoints:p},e)):(l.warn("No valid layout was provided for the image at "+t+". Valid image layouts are fixed, fullWidth, and constrained. Found "+r),{sizes:[n.width],presentationWidth:n.width,presentationHeight:n.height,aspectRatio:n.width/n.height,unscaledWidth:n.width});}(s({},e,{sourceMetadata:r})),W={sources:[]},j=e.sizes;j||(j=function(e,t){switch(t){case"constrained":return"(min-width: "+e+"px) "+e+"px, 100vw";case"fixed":return e+"px";case"fullWidth":return"100vw";default:return;}}(I.presentationWidth,o)),x.forEach(function(e){var t=I.sizes.map(function(t){var i=n(y,t,Math.round(t/I.aspectRatio),e,l,h);if(null!=i&&i.width&&i.height&&i.src&&i.format)return i;S.warn("["+a+"] The resolver for image "+y+" returned an invalid value.");}).filter(Boolean);if("jpg"===e||"png"===e||"auto"===e){var i=t.find(function(e){return e.width===I.unscaledWidth;})||t[0];i&&(W.fallback={src:i.src,srcSet:m(t),sizes:j});}else{var r;null==(r=W.sources)||r.push({srcSet:m(t),sizes:j,type:"image/"+e});}});var _={images:W,layout:o,backgroundColor:N};switch(R&&(_.placeholder={fallback:R}),o){case"fixed":_.width=I.presentationWidth,_.height=I.presentationHeight;break;case"fullWidth":_.width=1,_.height=1/I.aspectRatio;break;case"constrained":_.width=e.width||I.presentationWidth||1,_.height=(_.width||1)/I.aspectRatio;}return _;}var b=function(e){return Array.from(new Set([1].concat(e))).sort(p);};function E(e){var t,a=e.sourceMetadata,i=e.width,r=e.height,n=e.fit,o=void 0===n?"cover":n,s=e.outputPixelDensities,l=e.breakpoints,d=e.layout,c=a.width/a.height,h=b(void 0===s?u:s);if(i&&r){var g=k(a,{width:i,height:r,fit:o});i=g.width,r=g.height,c=g.aspectRatio;}i=i&&Math.min(i,a.width),r=r&&Math.min(r,a.height),i||r||(r=(i=Math.min(800,a.width))/c),i||(i=r*c);var m=i;return(a.width<i||a.height<r)&&(i=a.width,r=a.height),i=Math.round(i),(null==l?void 0:l.length)>0?(t=l.filter(function(e){return e<=a.width;})).length<l.length&&!t.includes(a.width)&&t.push(a.width):t=(t=h.map(function(e){return Math.round(e*i);})).filter(function(e){return e<=a.width;}),"constrained"!==d||t.includes(i)||t.push(i),{sizes:t=t.sort(p),aspectRatio:c,presentationWidth:m,presentationHeight:Math.round(m/c),unscaledWidth:i};}function k(e,t){var a=e.width/e.height,i=t.width,r=t.height;switch(t.fit){case"fill":i=t.width?t.width:e.width,r=t.height?t.height:e.height;break;case"inside":var n=t.width?t.width:Number.MAX_SAFE_INTEGER,o=t.height?t.height:Number.MAX_SAFE_INTEGER;i=Math.min(n,Math.round(o*a)),r=Math.min(o,Math.round(n/a));break;case"outside":var s=t.width?t.width:0,l=t.height?t.height:0;i=Math.max(s,Math.round(l*a)),r=Math.max(l,Math.round(s/a));break;default:t.width&&!t.height&&(i=t.width,r=Math.round(t.width/a)),t.height&&!t.width&&(i=Math.round(t.height*a),r=t.height);}return{width:i,height:r,aspectRatio:i/r};}var M=(/* unused pure expression or super */ null && (["baseUrl","urlBuilder","sourceWidth","sourceHeight","pluginName","formats","breakpoints","options"])),S=(/* unused pure expression or super */ null && (["images","placeholder"]));function N(){return true&&true;}new Set();var R=function(e){var t;return function(e){var t,a;return Boolean(null==e||null==(t=e.images)||null==(a=t.fallback)?void 0:a.src);}(e)?e:function(e){return Boolean(null==e?void 0:e.gatsbyImageData);}(e)?e.gatsbyImageData:null==e||null==(t=e.childImageSharp)?void 0:t.gatsbyImageData;},x=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.src;},I=function(e){var t,a,i;return null==(t=R(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.srcSet;};function W(e){var t,a=e.baseUrl,i=e.urlBuilder,r=e.sourceWidth,n=e.sourceHeight,o=e.pluginName,d=void 0===o?"getImageData":o,u=e.formats,c=void 0===u?["auto"]:u,g=e.breakpoints,p=e.options,m=l(e,M);return null!=(t=g)&&t.length||"fullWidth"!==m.layout&&"FULL_WIDTH"!==m.layout||(g=h),y(s({},m,{pluginName:d,generateImageSource:function(e,t,a,r){return{width:t,height:a,format:r,src:i({baseUrl:e,width:t,height:a,options:p,format:r})};},filename:a,formats:c,breakpoints:g,sourceMetadata:{width:r,height:n,format:"auto"}}));}function j(e,t){var a,i,r,n=e.images,o=e.placeholder,d=s({},l(e,S),{images:s({},n,{sources:[]}),placeholder:o&&s({},o,{sources:[]})});return t.forEach(function(t){var a,i=t.media,r=t.image;i?(r.layout!==e.layout&&"development"==="production"&&0,(a=d.images.sources).push.apply(a,r.images.sources.map(function(e){return s({},e,{media:i});}).concat([{media:i,srcSet:r.images.fallback.srcSet}])),d.placeholder&&d.placeholder.sources.push({media:i,srcSet:r.placeholder.fallback})): false&&0;}),(a=d.images.sources).push.apply(a,n.sources),null!=o&&o.sources&&(null==(i=d.placeholder)||(r=i.sources).push.apply(r,o.sources)),d;}var _,T=["src","srcSet","loading","alt","shouldLoad","innerRef"],A=["fallback","sources","shouldLoad"],O=function(t){var a=t.src,i=t.srcSet,r=t.loading,n=t.alt,o=void 0===n?"":n,d=t.shouldLoad,u=t.innerRef,c=l(t,T);return/*#__PURE__*/index_js_default().createElement("img",s({},c,{decoding:"async",loading:r,src:d?a:void 0,"data-src":d?void 0:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,alt:o,ref:u}));},z=/*#__PURE__*/(0,index_js_.forwardRef)(function(t,a){var i=t.fallback,r=t.sources,n=void 0===r?[]:r,o=t.shouldLoad,d=void 0===o||o,u=l(t,A),c=u.sizes||(null==i?void 0:i.sizes),h=/*#__PURE__*/index_js_default().createElement(O,s({},u,i,{sizes:c,shouldLoad:d,innerRef:a}));return n.length?/*#__PURE__*/index_js_default().createElement("picture",null,n.map(function(t){var a=t.media,i=t.srcSet,r=t.type;return/*#__PURE__*/index_js_default().createElement("source",{key:a+"-"+r+"-"+i,type:r,media:a,srcSet:d?i:void 0,"data-srcset":d?void 0:i,sizes:c});}),h):h;});O.propTypes={src:prop_types.string.isRequired,alt:prop_types.string.isRequired,sizes:prop_types.string,srcSet:prop_types.string,shouldLoad:prop_types.bool},z.displayName="Picture",z.propTypes={alt:prop_types.string.isRequired,shouldLoad:prop_types.bool,fallback:prop_types.exact({src:prop_types.string.isRequired,srcSet:prop_types.string,sizes:prop_types.string}),sources:prop_types.arrayOf(prop_types.oneOfType([prop_types.exact({media:prop_types.string.isRequired,type:prop_types.string,sizes:prop_types.string,srcSet:prop_types.string.isRequired}),prop_types.exact({media:prop_types.string,type:prop_types.string.isRequired,sizes:prop_types.string,srcSet:prop_types.string.isRequired})]))};var L=["fallback"],C=function(t){var a=t.fallback,i=l(t,L);return a?/*#__PURE__*/index_js_default().createElement(z,s({},i,{fallback:{src:a},"aria-hidden":!0,alt:""})):/*#__PURE__*/index_js_default().createElement("div",s({},i));};C.displayName="Placeholder",C.propTypes={fallback:prop_types.string,sources:null==(_=z.propTypes)?void 0:_.sources,alt:function(e,t,a){return e[t]?new Error("Invalid prop `"+t+"` supplied to `"+a+"`. Validation failed."):null;}};var q=/*#__PURE__*/(0,index_js_.forwardRef)(function(t,a){return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,/*#__PURE__*/index_js_default().createElement(z,s({ref:a},t)),/*#__PURE__*/index_js_default().createElement("noscript",null,/*#__PURE__*/index_js_default().createElement(z,s({},t,{shouldLoad:!0}))));});q.displayName="MainImage",q.propTypes=z.propTypes;var D=["children"],P=function(){return/*#__PURE__*/index_js_default().createElement("script",{type:"module",dangerouslySetInnerHTML:{__html:'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'}});},H=function(t){var a=t.layout,i=t.width,r=t.height;return"fullWidth"===a?/*#__PURE__*/index_js_default().createElement("div",{"aria-hidden":!0,style:{paddingTop:r/i*100+"%"}}):"constrained"===a?/*#__PURE__*/index_js_default().createElement("div",{style:{maxWidth:i,display:"block"}},/*#__PURE__*/index_js_default().createElement("img",{alt:"",role:"presentation","aria-hidden":"true",src:"data:image/svg+xml;charset=utf-8,%3Csvg height='"+r+"' width='"+i+"' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",style:{maxWidth:"100%",display:"block",position:"static"}})):null;},F=function(t){var i=t.children,r=l(t,D);return/*#__PURE__*/index_js_default().createElement(index_js_.Fragment,null,/*#__PURE__*/index_js_default().createElement(H,s({},r)),i,/*#__PURE__*/index_js_default().createElement(P,null));},B=["as","children"],G=["as","className","class","style","image","loading","imgClassName","imgStyle","backgroundColor","objectFit","objectPosition"],V=["style","className"],U=function(e){return e.replace(/\n/g,"");},X=function(t){var a=t.as,i=void 0===a?"div":a,r=t.children,n=l(t,B);return/*#__PURE__*/index_js_default().createElement(i,s({},n),r);},Y=function(t){var a=t.as,i=t.className,r=t.class,n=t.style,o=t.image,d=t.loading,u=void 0===d?"lazy":d,c=t.imgClassName,h=t.imgStyle,g=t.backgroundColor,p=t.objectFit,m=t.objectPosition,f=l(t,G);if(!o)return console.warn("[gatsby-plugin-image] Missing image prop"),null;r&&(i=r),h=s({objectFit:p,objectPosition:m,backgroundColor:g},h);var v=o.width,w=o.height,y=o.layout,b=o.images,E=o.placeholder,k=o.backgroundColor,M=function(e,t,a){var i={},r="gatsby-image-wrapper";return N()||(i.position="relative",i.overflow="hidden"),"fixed"===a?(i.width=e,i.height=t):"constrained"===a&&(N()||(i.display="inline-block",i.verticalAlign="top"),r="gatsby-image-wrapper gatsby-image-wrapper-constrained"),{className:r,"data-gatsby-image-wrapper":"",style:i};}(v,w,y),S=M.style,R=M.className,x=l(M,V),I={fallback:void 0,sources:[]};return b.fallback&&(I.fallback=s({},b.fallback,{srcSet:b.fallback.srcSet?U(b.fallback.srcSet):void 0})),b.sources&&(I.sources=b.sources.map(function(e){return s({},e,{srcSet:U(e.srcSet)});})),/*#__PURE__*/index_js_default().createElement(X,s({},x,{as:a,style:s({},S,n,{backgroundColor:g}),className:R+(i?" "+i:"")}),/*#__PURE__*/index_js_default().createElement(F,{layout:y,width:v,height:w},/*#__PURE__*/index_js_default().createElement(C,s({},function(e,t,a,i,r,n,o,l){var d={};n&&(d.backgroundColor=n,"fixed"===a?(d.width=i,d.height=r,d.backgroundColor=n,d.position="relative"):("constrained"===a||"fullWidth"===a)&&(d.position="absolute",d.top=0,d.left=0,d.bottom=0,d.right=0)),o&&(d.objectFit=o),l&&(d.objectPosition=l);var u=s({},e,{"aria-hidden":!0,"data-placeholder-image":"",style:s({opacity:1,transition:"opacity 500ms linear"},d)});return N()||(u.style={height:"100%",left:0,position:"absolute",top:0,width:"100%"}),u;}(E,0,y,v,w,k,p,m))),/*#__PURE__*/index_js_default().createElement(q,s({"data-gatsby-image-ssr":"",className:c},f,function(e,t,a,i,r,n,o,l){return void 0===l&&(l={}),N()||(l=s({height:"100%",left:0,position:"absolute",top:0,transform:"translateZ(0)",transition:"opacity 250ms linear",width:"100%",willChange:"opacity"},l)),s({},a,{loading:i,shouldLoad:e,"data-main-image":"",style:s({},l,{opacity:0}),onLoad:function(e){var t=e.currentTarget,a=new Image();a.src=t.currentSrc,a.decode?a.decode().catch(function(){}).then(function(){r(!0);}):r(!0);},ref:void 0});}("eager"===u,0,I,u,void 0,0,0,h)))));},Z=["src","__imageData","__error","width","height","aspectRatio","tracedSVGOptions","placeholder","formats","quality","transformOptions","jpgOptions","pngOptions","webpOptions","avifOptions","blurredOptions"],J=function(t){return function(a){var i=a.src,r=a.__imageData,n=a.__error,o=l(a,Z);return n&&console.warn(n),r?/*#__PURE__*/index_js_default().createElement(t,s({image:r},o)):(console.warn("Image not loaded",i),n||"development"!=="production"||0,null);};}(Y),K=function(e,t){return"fullWidth"!==e.layout||"width"!==t&&"height"!==t||!e[t]?prop_types_default().number.apply((prop_types_default()),[e,t].concat([].slice.call(arguments,2))):new Error('"'+t+'" '+e[t]+" may not be passed when layout is fullWidth.");},Q=new Set(["fixed","fullWidth","constrained"]),$={src:(prop_types_default()).string.isRequired,alt:function(e,t,a){return e.alt||""===e.alt?prop_types_default().string.apply((prop_types_default()),[e,t,a].concat([].slice.call(arguments,3))):new Error('The "alt" prop is required in '+a+'. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');},width:K,height:K,sizes:(prop_types_default()).string,layout:function(e){if(void 0!==e.layout&&!Q.has(e.layout))return new Error("Invalid value "+e.layout+'" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');}};J.displayName="StaticImage",J.propTypes=$;
+;// CONCATENATED MODULE: ./src/components/bio.js
 /**
  * Bio component that queries for data
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-
-
-const Bio = () => {
-  var _data$site$siteMetada, _data$site$siteMetada2;
-
-  const data = _public_page_data_sq_d_3257411868_json__WEBPACK_IMPORTED_MODULE_0__.data; // Set these values by editing "siteMetadata" in gatsby-config.js
-
-  const author = (_data$site$siteMetada = data.site.siteMetadata) === null || _data$site$siteMetada === void 0 ? void 0 : _data$site$siteMetada.author;
-  const social = (_data$site$siteMetada2 = data.site.siteMetadata) === null || _data$site$siteMetada2 === void 0 ? void 0 : _data$site$siteMetada2.social;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "bio"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
-    className: "bio-avatar",
-    layout: "fixed",
-    formats: ["auto", "webp", "avif"],
-    src: "../images/profile-pic.png",
-    width: 50,
-    height: 50,
-    quality: 95,
-    alt: "Profile picture",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/1243370623.json */ "./.cache/caches/gatsby-plugin-image/1243370623.json")
-  }), (author === null || author === void 0 ? void 0 : author.name) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Written by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("strong", null, author.name), " ", (author === null || author === void 0 ? void 0 : author.summary) || null, ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
-    href: `https://twitter.com/${(social === null || social === void 0 ? void 0 : social.twitter) || ``}`
-  }, "You should follow them on Twitter")));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Bio);
+ */const Bio=()=>{var _data$site$siteMetada,_data$site$siteMetada2;const data=(0,gatsby_browser_entry.useStaticQuery)("3257411868");// Set these values by editing "siteMetadata" in gatsby-config.js
+const author=(_data$site$siteMetada=data.site.siteMetadata)===null||_data$site$siteMetada===void 0?void 0:_data$site$siteMetada.author;const social=(_data$site$siteMetada2=data.site.siteMetadata)===null||_data$site$siteMetada2===void 0?void 0:_data$site$siteMetada2.social;return/*#__PURE__*/index_js_.createElement("div",{className:"bio"},/*#__PURE__*/index_js_.createElement(J,{className:"bio-avatar",layout:"fixed",formats:["auto","webp","avif"],src:"../images/profile-pic.png",width:50,height:50,quality:95,alt:"Profile picture",__imageData:__webpack_require__(1550)}),(author===null||author===void 0?void 0:author.name)&&/*#__PURE__*/index_js_.createElement("p",null,"Written by ",/*#__PURE__*/index_js_.createElement("strong",null,author.name)," ",(author===null||author===void 0?void 0:author.summary)||null,` `,/*#__PURE__*/index_js_.createElement("a",{href:`https://twitter.com/${(social===null||social===void 0?void 0:social.twitter)||``}`},"You should follow them on Twitter")));};/* harmony default export */ const bio = (Bio);
 
 /***/ }),
 
-/***/ "./src/components/layout.js":
-/*!**********************************!*\
-  !*** ./src/components/layout.js ***!
-  \**********************************/
+/***/ 7198:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5952);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-
-
-
-const Layout = ({
-  location,
-  title,
-  children
-}) => {
-  const rootPath = `${""}/`;
-  const isRootPath = location.pathname === rootPath;
-  let header;
-
-  if (isRootPath) {
-    header = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-      className: "main-heading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-      to: "/"
-    }, title));
-  } else {
-    header = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-      className: "header-link-home",
-      to: "/"
-    }, title);
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "global-wrapper",
-    "data-is-root-path": isRootPath
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", {
-    className: "global-header"
-  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", Built with", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.gatsbyjs.com"
-  }, "Gatsby")));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2031);
+const Layout=({location,title,children})=>{const rootPath=`${""}/`;const isRootPath=location.pathname===rootPath;let header;if(isRootPath){header=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1",{className:"main-heading"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link,{to:"/"},title));}else{header=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link,{className:"header-link-home",to:"/"},title);}return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div",{className:"global-wrapper","data-is-root-path":isRootPath},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header",{className:"global-header"},header),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main",null,children),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer",null,"\xA9 ",new Date().getFullYear(),", Built with",` `,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a",{href:"https://www.gatsbyjs.com"},"Gatsby")));};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
 /***/ }),
 
-/***/ "./src/components/seo.js":
-/*!*******************************!*\
-  !*** ./src/components/seo.js ***!
-  \*******************************/
+/***/ 6179:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/2841359383.json */ "./public/page-data/sq/d/2841359383.json");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5952);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5697);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4593);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2031);
 /**
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-
-
-
-const Seo = ({
-  description,
-  lang,
-  meta,
-  title
-}) => {
-  var _site$siteMetadata, _site$siteMetadata2, _site$siteMetadata2$s;
-
-  const {
-    site
-  } = _public_page_data_sq_d_2841359383_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = (_site$siteMetadata = site.siteMetadata) === null || _site$siteMetadata === void 0 ? void 0 : _site$siteMetadata.title;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_3__.Helmet, {
-    htmlAttributes: {
-      lang
-    },
-    title: title,
-    titleTemplate: defaultTitle ? `%s | ${defaultTitle}` : null,
-    meta: [{
-      name: `description`,
-      content: metaDescription
-    }, {
-      property: `og:title`,
-      content: title
-    }, {
-      property: `og:description`,
-      content: metaDescription
-    }, {
-      property: `og:type`,
-      content: `website`
-    }, {
-      name: `twitter:card`,
-      content: `summary`
-    }, {
-      name: `twitter:creator`,
-      content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : (_site$siteMetadata2$s = _site$siteMetadata2.social) === null || _site$siteMetadata2$s === void 0 ? void 0 : _site$siteMetadata2$s.twitter) || ``
-    }, {
-      name: `twitter:title`,
-      content: title
-    }, {
-      name: `twitter:description`,
-      content: metaDescription
-    }].concat(meta)
-  });
-};
-
-Seo.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``
-};
-Seo.propTypes = {
-  description: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
-  lang: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
-  meta: prop_types__WEBPACK_IMPORTED_MODULE_2___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)),
-  title: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.isRequired)
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
+ */const Seo=({description,lang,meta,title})=>{var _site$siteMetadata,_site$siteMetadata2,_site$siteMetadata2$s;const{site}=(0,gatsby__WEBPACK_IMPORTED_MODULE_3__.useStaticQuery)("2841359383");const metaDescription=description||site.siteMetadata.description;const defaultTitle=(_site$siteMetadata=site.siteMetadata)===null||_site$siteMetadata===void 0?void 0:_site$siteMetadata.title;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet,{htmlAttributes:{lang},title:title,titleTemplate:defaultTitle?`%s | ${defaultTitle}`:null,meta:[{name:`description`,content:metaDescription},{property:`og:title`,content:title},{property:`og:description`,content:metaDescription},{property:`og:type`,content:`website`},{name:`twitter:card`,content:`summary`},{name:`twitter:creator`,content:((_site$siteMetadata2=site.siteMetadata)===null||_site$siteMetadata2===void 0?void 0:(_site$siteMetadata2$s=_site$siteMetadata2.social)===null||_site$siteMetadata2$s===void 0?void 0:_site$siteMetadata2$s.twitter)||``},{name:`twitter:title`,content:title},{name:`twitter:description`,content:metaDescription}].concat(meta)});};Seo.defaultProps={lang:`en`,meta:[],description:``};Seo.propTypes={description:(prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),lang:(prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),meta:prop_types__WEBPACK_IMPORTED_MODULE_1___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_1___default().object)),title:(prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Seo);
 
 /***/ }),
 
-/***/ "./src/templates/blog-post.js":
-/*!************************************!*\
-  !*** ./src/templates/blog-post.js ***!
-  \************************************/
+/***/ 4870:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15709,90 +14519,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5952);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @contentful/rich-text-types */ "./node_modules/@contentful/rich-text-types/dist/index.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2031);
+/* harmony import */ var _contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6437);
 /* harmony import */ var _contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contentful_rich_text_react_renderer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @contentful/rich-text-react-renderer */ "./node_modules/@contentful/rich-text-react-renderer/dist/rich-text-react-renderer.es5.js");
-/* harmony import */ var _components_bio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/bio */ "./src/components/bio.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
-
-
-
-
-
-
-
-const RICHTEXT_OPTIONS = {
-  renderNode: {
-    [_contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__.BLOCKS.PARAGRAPH]: (node, children) => {
-      return;
-
-      /*#__PURE__*/
-      react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, children);
-    },
-    [_contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__.MARKS.BOLD]: (node, children) => {
-      return;
-
-      /*#__PURE__*/
-      react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, children);
-    }
-  }
-};
-
-const BlogPostTemplate = ({
-  data,
-  location
-}) => {
-  const post = data.contentfulPosts;
-  const siteTitle = "Post";
-  const {
-    previous,
-    next
-  } = data;
-  const json = JSON.parse(post.description.raw);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    location: location,
-    title: siteTitle
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: post.title,
-    description: post.description.raw || post.title
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", {
-    className: "blog-post",
-    itemScope: true,
-    itemType: "http://schema.org/Article"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    itemProp: "headline"
-  }, post.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, post.createdAt)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", null, (0,_contentful_rich_text_react_renderer__WEBPACK_IMPORTED_MODULE_3__.documentToReactComponents)(json, RICHTEXT_OPTIONS)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_bio__WEBPACK_IMPORTED_MODULE_4__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
-    className: "blog-post-nav"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    style: {
-      display: `flex`,
-      flexWrap: `wrap`,
-      justifyContent: `space-between`,
-      listStyle: `none`,
-      padding: 0
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, previous && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: previous.slug,
-    rel: "prev"
-  }, "\u2190 ", previous.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, next && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: next.slug,
-    rel: "next"
-  }, next.title, " \u2192")))));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogPostTemplate);
-const pageQuery = "156144983";
+/* harmony import */ var _contentful_rich_text_react_renderer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4129);
+/* harmony import */ var _components_bio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4483);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7198);
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6179);
+const RICHTEXT_OPTIONS={renderNode:{[_contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__.BLOCKS.PARAGRAPH]:(node,children)=>{return;/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,children);},[_contentful_rich_text_types__WEBPACK_IMPORTED_MODULE_2__.MARKS.BOLD]:(node,children)=>{return;/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,children);}}};const BlogPostTemplate=({data,location})=>{const post=data.contentfulPosts;const siteTitle="Post";const{previous,next}=data;const json=JSON.parse(post.description.raw);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z,{location:location,title:siteTitle},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,{title:post.title,description:post.description.raw||post.title}),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article",{className:"blog-post",itemScope:true,itemType:"http://schema.org/Article"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1",{itemProp:"headline"},post.title),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p",null,post.createdAt)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section",null,(0,_contentful_rich_text_react_renderer__WEBPACK_IMPORTED_MODULE_3__/* .documentToReactComponents */ .h)(json,RICHTEXT_OPTIONS)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_bio__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z,null))));};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogPostTemplate);const pageQuery="2008097068";
 
 /***/ }),
 
-/***/ "./node_modules/uri-js/dist/es5/uri.all.js":
-/*!*************************************************!*\
-  !*** ./node_modules/uri-js/dist/es5/uri.all.js ***!
-  \*************************************************/
+/***/ 540:
 /***/ (function(__unused_webpack_module, exports) {
 
 /** @license URI.js v4.4.1 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js */
@@ -17241,10 +15981,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/1243370623.json":
-/*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/1243370623.json ***!
-  \***********************************************************/
+/***/ 1550:
 /***/ ((module) => {
 
 "use strict";
@@ -17252,10 +15989,7 @@ module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#f8f8f8","imag
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/asset-hyperlink.json":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/asset-hyperlink.json ***!
-  \**********************************************************************************************/
+/***/ 5994:
 /***/ ((module) => {
 
 "use strict";
@@ -17263,10 +15997,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/AssetHyperlink","definitions
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/blockquote.json":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/blockquote.json ***!
-  \*****************************************************************************************/
+/***/ 2559:
 /***/ ((module) => {
 
 "use strict";
@@ -17274,10 +16005,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Quote","definitions":{"Quote
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/document.json":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/document.json ***!
-  \***************************************************************************************/
+/***/ 1734:
 /***/ ((module) => {
 
 "use strict";
@@ -17285,10 +16013,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Document","definitions":{"Do
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-asset-block.json":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-asset-block.json ***!
-  \***************************************************************************************************/
+/***/ 1220:
 /***/ ((module) => {
 
 "use strict";
@@ -17296,10 +16021,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/AssetLinkBlock","definitions
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-block.json":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-block.json ***!
-  \***************************************************************************************************/
+/***/ 2258:
 /***/ ((module) => {
 
 "use strict";
@@ -17307,10 +16029,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/EntryLinkBlock","definitions
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-inline.json":
-/*!****************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/embedded-entry-inline.json ***!
-  \****************************************************************************************************/
+/***/ 2204:
 /***/ ((module) => {
 
 "use strict";
@@ -17318,10 +16037,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/EntryLinkInline","definition
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/entry-hyperlink.json":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/entry-hyperlink.json ***!
-  \**********************************************************************************************/
+/***/ 6502:
 /***/ ((module) => {
 
 "use strict";
@@ -17329,10 +16045,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/EntryHyperlink","definitions
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-1.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-1.json ***!
-  \****************************************************************************************/
+/***/ 2813:
 /***/ ((module) => {
 
 "use strict";
@@ -17340,10 +16053,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading1","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-2.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-2.json ***!
-  \****************************************************************************************/
+/***/ 5080:
 /***/ ((module) => {
 
 "use strict";
@@ -17351,10 +16061,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading2","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-3.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-3.json ***!
-  \****************************************************************************************/
+/***/ 6423:
 /***/ ((module) => {
 
 "use strict";
@@ -17362,10 +16069,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading3","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-4.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-4.json ***!
-  \****************************************************************************************/
+/***/ 4942:
 /***/ ((module) => {
 
 "use strict";
@@ -17373,10 +16077,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading4","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-5.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-5.json ***!
-  \****************************************************************************************/
+/***/ 5579:
 /***/ ((module) => {
 
 "use strict";
@@ -17384,10 +16085,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading5","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-6.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/heading-6.json ***!
-  \****************************************************************************************/
+/***/ 705:
 /***/ ((module) => {
 
 "use strict";
@@ -17395,10 +16093,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Heading6","definitions":{"He
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/hr.json":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/hr.json ***!
-  \*********************************************************************************/
+/***/ 7121:
 /***/ ((module) => {
 
 "use strict";
@@ -17406,10 +16101,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Hr","definitions":{"Hr":{"ty
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/hyperlink.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/hyperlink.json ***!
-  \****************************************************************************************/
+/***/ 3165:
 /***/ ((module) => {
 
 "use strict";
@@ -17417,10 +16109,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Hyperlink","definitions":{"H
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/list-item.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/list-item.json ***!
-  \****************************************************************************************/
+/***/ 8094:
 /***/ ((module) => {
 
 "use strict";
@@ -17428,10 +16117,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/ListItem","definitions":{"Li
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/ordered-list.json":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/ordered-list.json ***!
-  \*******************************************************************************************/
+/***/ 8122:
 /***/ ((module) => {
 
 "use strict";
@@ -17439,10 +16125,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/OrderedList","definitions":{
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/paragraph.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/paragraph.json ***!
-  \****************************************************************************************/
+/***/ 8986:
 /***/ ((module) => {
 
 "use strict";
@@ -17450,10 +16133,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Paragraph","definitions":{"P
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-cell.json":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-cell.json ***!
-  \*****************************************************************************************/
+/***/ 9924:
 /***/ ((module) => {
 
 "use strict";
@@ -17461,10 +16141,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/TableCell","definitions":{"T
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-header-cell.json":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-header-cell.json ***!
-  \************************************************************************************************/
+/***/ 1787:
 /***/ ((module) => {
 
 "use strict";
@@ -17472,10 +16149,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/TableHeaderCell","definition
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-row.json":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/table-row.json ***!
-  \****************************************************************************************/
+/***/ 5531:
 /***/ ((module) => {
 
 "use strict";
@@ -17483,10 +16157,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/TableRow","definitions":{"Ta
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/table.json":
-/*!************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/table.json ***!
-  \************************************************************************************/
+/***/ 9269:
 /***/ ((module) => {
 
 "use strict";
@@ -17494,10 +16165,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Table","definitions":{"Table
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/text.json":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/text.json ***!
-  \***********************************************************************************/
+/***/ 3022:
 /***/ ((module) => {
 
 "use strict";
@@ -17505,10 +16173,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/Text","definitions":{"Text":
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/dist/schemas/generated/unordered-list.json":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/dist/schemas/generated/unordered-list.json ***!
-  \*********************************************************************************************/
+/***/ 8500:
 /***/ ((module) => {
 
 "use strict";
@@ -17516,10 +16181,7 @@ module.exports = JSON.parse('{"$ref":"#/definitions/UnorderedList","definitions"
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/data.json":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/data.json ***!
-  \***************************************************************************************/
+/***/ 1072:
 /***/ ((module) => {
 
 "use strict";
@@ -17527,36 +16189,11 @@ module.exports = JSON.parse('{"$id":"https://raw.githubusercontent.com/ajv-valid
 
 /***/ }),
 
-/***/ "./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/json-schema-draft-07.json":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/@contentful/rich-text-types/node_modules/ajv/dist/refs/json-schema-draft-07.json ***!
-  \*******************************************************************************************************/
+/***/ 1668:
 /***/ ((module) => {
 
 "use strict";
 module.exports = JSON.parse('{"$schema":"http://json-schema.org/draft-07/schema#","$id":"http://json-schema.org/draft-07/schema#","title":"Core schema meta-schema","definitions":{"schemaArray":{"type":"array","minItems":1,"items":{"$ref":"#"}},"nonNegativeInteger":{"type":"integer","minimum":0},"nonNegativeIntegerDefault0":{"allOf":[{"$ref":"#/definitions/nonNegativeInteger"},{"default":0}]},"simpleTypes":{"enum":["array","boolean","integer","null","number","object","string"]},"stringArray":{"type":"array","items":{"type":"string"},"uniqueItems":true,"default":[]}},"type":["object","boolean"],"properties":{"$id":{"type":"string","format":"uri-reference"},"$schema":{"type":"string","format":"uri"},"$ref":{"type":"string","format":"uri-reference"},"$comment":{"type":"string"},"title":{"type":"string"},"description":{"type":"string"},"default":true,"readOnly":{"type":"boolean","default":false},"examples":{"type":"array","items":true},"multipleOf":{"type":"number","exclusiveMinimum":0},"maximum":{"type":"number"},"exclusiveMaximum":{"type":"number"},"minimum":{"type":"number"},"exclusiveMinimum":{"type":"number"},"maxLength":{"$ref":"#/definitions/nonNegativeInteger"},"minLength":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"pattern":{"type":"string","format":"regex"},"additionalItems":{"$ref":"#"},"items":{"anyOf":[{"$ref":"#"},{"$ref":"#/definitions/schemaArray"}],"default":true},"maxItems":{"$ref":"#/definitions/nonNegativeInteger"},"minItems":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"uniqueItems":{"type":"boolean","default":false},"contains":{"$ref":"#"},"maxProperties":{"$ref":"#/definitions/nonNegativeInteger"},"minProperties":{"$ref":"#/definitions/nonNegativeIntegerDefault0"},"required":{"$ref":"#/definitions/stringArray"},"additionalProperties":{"$ref":"#"},"definitions":{"type":"object","additionalProperties":{"$ref":"#"},"default":{}},"properties":{"type":"object","additionalProperties":{"$ref":"#"},"default":{}},"patternProperties":{"type":"object","additionalProperties":{"$ref":"#"},"propertyNames":{"format":"regex"},"default":{}},"dependencies":{"type":"object","additionalProperties":{"anyOf":[{"$ref":"#"},{"$ref":"#/definitions/stringArray"}]}},"propertyNames":{"$ref":"#"},"const":true,"enum":{"type":"array","items":true,"minItems":1,"uniqueItems":true},"type":{"anyOf":[{"$ref":"#/definitions/simpleTypes"},{"type":"array","items":{"$ref":"#/definitions/simpleTypes"},"minItems":1,"uniqueItems":true}]},"format":{"type":"string"},"contentMediaType":{"type":"string"},"contentEncoding":{"type":"string"},"if":{"$ref":"#"},"then":{"$ref":"#"},"else":{"$ref":"#"},"allOf":{"$ref":"#/definitions/schemaArray"},"anyOf":{"$ref":"#/definitions/schemaArray"},"oneOf":{"$ref":"#/definitions/schemaArray"},"not":{"$ref":"#"}},"default":true}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/2841359383.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/2841359383.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}');
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/3257411868.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3257411868.json ***!
-  \***********************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Kyle Mathews","summary":"who lives and works in San Francisco building useful things."},"social":{"twitter":"kylemathews"}}}}}');
 
 /***/ })
 
